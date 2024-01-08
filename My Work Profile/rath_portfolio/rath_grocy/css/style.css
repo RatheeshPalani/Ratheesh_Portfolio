@@ -1,0 +1,1270 @@
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto-regular";
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Roboto-bold";
+}
+body .dropdown-toggle::after {
+  display: none;
+}
+
+.scroll-top {
+  height: 40px;
+  width: 40px;
+  background: black;
+  color: white;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  outline: none;
+  border: none;
+  padding-bottom: 4px;
+  font-size: 20px;
+  scroll-behavior: smooth;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+.scroll-top:hover, .scroll-top.active {
+  background-color: #26901b;
+  transform: rotate(0deg);
+}
+
+.fclear {
+  clear: both;
+}
+
+.headercontainer {
+  padding: 25px 0px;
+}
+.headercontainer .searchcontainer {
+  border: 1px solid #e9e9e9;
+  width: 620px;
+  margin-left: 86px;
+  padding: 0px 0px 0px 8px;
+  display: inline-block;
+}
+.headercontainer .searchcontainer input {
+  display: inline-block;
+  border: none;
+  padding-left: 10px;
+  font-size: 14px;
+  color: black;
+  margin-top: 8px;
+  outline: none;
+  width: 380px;
+}
+.headercontainer .searchcontainer .custom-dropdown {
+  display: inline;
+  color: red;
+}
+.headercontainer .searchcontainer .custom-dropdown .buttondrop {
+  border: none;
+  background-color: white;
+  padding: 10px 10px;
+  outline: none;
+  color: black;
+  border-left: 1px solid #e9e9e9;
+}
+.headercontainer .searchcontainer .custom-dropdown i {
+  margin-left: 30px;
+}
+.headercontainer .searchcontainer .custom-dropdown .dropdown-menu {
+  margin-top: 30px;
+}
+.headercontainer .searchcontainer .custom-dropdown .dropdown-menu li a {
+  padding: 10px 20px;
+}
+.headercontainer .searchcontainer .searchicon {
+  background-color: #26901b;
+  color: white;
+  font-size: 20px;
+  float: right;
+  padding: 12px;
+  width: 58px;
+  text-align: center;
+}
+.headercontainer .iconcontainer {
+  float: right;
+}
+.headercontainer .iconcontainer a {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 6px;
+}
+.headercontainer .iconcontainer a .ico i {
+  font-size: 30px;
+  color: #4c4e4c;
+}
+.headercontainer .iconcontainer a p {
+  color: #4c4e4c;
+  font-size: 14px;
+  margin-right: 15px;
+}
+.headercontainer .iconcontainer a span {
+  color: white;
+  background-color: #26901b;
+  padding: 3px 7px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  top: -16px;
+  left: -45px;
+}
+
+.headercontainer2 {
+  background-color: #26901b;
+  margin: 0px -15px;
+}
+.headercontainer2 .row {
+  margin: 0px 0px;
+}
+.headercontainer2 .row .custommenu-button .btn-default {
+  background-color: #1d7214;
+  padding: 15px 15px;
+  width: 270px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  border-radius: 0px;
+}
+.headercontainer2 .row .custommenu-button .btn-default i {
+  font-weight: normal;
+  font-size: 24px;
+  margin-right: 10px;
+  position: relative;
+  color: white;
+  float: right;
+}
+.headercontainer2 .row .custommenu-button .dropdown-menu {
+  width: 270px;
+  margin-top: -1px;
+  border-radius: 0px;
+}
+.headercontainer2 .row .custommenu-button .dropdown-menu .divider {
+  margin: 0px 0px;
+}
+.headercontainer2 .row .custommenu-button .dropdown-menu li i {
+  float: right;
+  font-size: 20px;
+}
+.headercontainer2 .row .custommenu-button .dropdown-menu li span {
+  color: white;
+  background-color: red;
+  padding: 3px 7px;
+  border-radius: 14px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.headercontainer2 .row .custommenu-button .dropdown-menu li a {
+  padding: 9px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.headercontainer2 .row .menucontainer {
+  margin-left: 35px;
+  padding: 14px 0px;
+}
+.headercontainer2 .row .menucontainer .custom-dropdown {
+  display: inline;
+  color: black;
+}
+.headercontainer2 .row .menucontainer .custom-dropdown .buttondrop {
+  border: none;
+  background-color: #26901b;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.headercontainer2 .row .menucontainer .custom-dropdown i {
+  margin-left: 0px;
+  font-size: 16px;
+  margin-top: 0px;
+}
+.headercontainer2 .row .menucontainer .custom-dropdown .dropdown-menu {
+  margin-top: 30px;
+}
+.headercontainer2 .row .menucontainer .custom-dropdown .dropdown-menu li a {
+  padding: 10px 18px;
+}
+.headercontainer2 .row .locationcontainer {
+  padding: 14px 0px;
+}
+.headercontainer2 .row .locationcontainer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bodycontainer .bannercontainer {
+  margin: 0px -15px;
+}
+.bodycontainer .bannercontainer .custom-carousel .carousel-inner {
+  height: 420px;
+}
+.bodycontainer .bannercontainer .custom-carousel .carousel-inner .carousel-caption {
+  top: 12%;
+  left: 55%;
+  height: 285px;
+  width: 512px;
+  background-color: #ffd010;
+  border-radius: 0px 0px 150px 0px;
+  text-align: left;
+  padding: 35px 30px;
+}
+.bodycontainer .bannercontainer .custom-carousel .carousel-inner .carousel-caption span {
+  background-color: white;
+  color: black;
+  text-shadow: none;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+.bodycontainer .bannercontainer .custom-carousel .carousel-inner .carousel-caption h1 {
+  text-shadow: none;
+  color: #002e51;
+  font-size: 42px;
+}
+.bodycontainer .bannercontainer .custom-carousel .carousel-inner .carousel-caption button {
+  color: black;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: 1s;
+}
+.bodycontainer .bannercontainer .custom-carousel .carousel-inner .carousel-caption button:hover {
+  background-color: #002e51;
+  color: white;
+  transition: 1s;
+}
+.bodycontainer .productcirclecontainer {
+  padding: 50px 0px;
+}
+.bodycontainer .productcirclecontainer .circleimage {
+  text-align: center;
+}
+.bodycontainer .productcirclecontainer .circleimage img {
+  border-radius: 100%;
+  width: 100%;
+}
+.bodycontainer .bestsellingproductsheader {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 10px;
+}
+.bodycontainer .bestsellingproductsheader h3 {
+  display: inline;
+  border-bottom: 2px solid #26901b;
+  padding-bottom: 10px;
+}
+.bodycontainer .bestsellingproductsheader .viewall {
+  float: right;
+  font-weight: bold;
+  color: #26901b;
+}
+.bodycontainer .bestsellingproductsheader .menucontainer {
+  display: inline;
+  float: right;
+}
+.bodycontainer .bestsellingproductsheader .menucontainer a {
+  text-decoration: none;
+  color: black;
+}
+.bodycontainer .bestsellingproductsheader .menucontainer a h4 {
+  display: inline;
+  margin-left: 25px;
+}
+.bodycontainer .bestsellingproductsheader .menucontainer a h4.active {
+  border-bottom: 2px solid #26901b;
+  padding-bottom: 15px;
+}
+.bodycontainer .breakfast1, .bodycontainer .breakfast2, .bodycontainer .breakfast3 {
+  margin: 15px 15px 50px 15px;
+  display: none;
+}
+.bodycontainer .breakfast1 .row .col-sm-2, .bodycontainer .breakfast1 .row .col-sm-3, .bodycontainer .breakfast2 .row .col-sm-2, .bodycontainer .breakfast2 .row .col-sm-3, .bodycontainer .breakfast3 .row .col-sm-2, .bodycontainer .breakfast3 .row .col-sm-3 {
+  width: 257px;
+  border: 1px solid #e9e9e9;
+  margin: 3px 3px 3px 3px;
+  padding: 10px 6px 20px;
+  line-height: 10px;
+  position: relative;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 img, .bodycontainer .breakfast1 .row .col-sm-3 img, .bodycontainer .breakfast2 .row .col-sm-2 img, .bodycontainer .breakfast2 .row .col-sm-3 img, .bodycontainer .breakfast3 .row .col-sm-2 img, .bodycontainer .breakfast3 .row .col-sm-3 img {
+  width: 100%;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 p, .bodycontainer .breakfast1 .row .col-sm-3 p, .bodycontainer .breakfast2 .row .col-sm-2 p, .bodycontainer .breakfast2 .row .col-sm-3 p, .bodycontainer .breakfast3 .row .col-sm-2 p, .bodycontainer .breakfast3 .row .col-sm-3 p {
+  font-size: 14px;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 h5, .bodycontainer .breakfast1 .row .col-sm-3 h5, .bodycontainer .breakfast2 .row .col-sm-2 h5, .bodycontainer .breakfast2 .row .col-sm-3 h5, .bodycontainer .breakfast3 .row .col-sm-2 h5, .bodycontainer .breakfast3 .row .col-sm-3 h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 .star i, .bodycontainer .breakfast1 .row .col-sm-3 .star i, .bodycontainer .breakfast2 .row .col-sm-2 .star i, .bodycontainer .breakfast2 .row .col-sm-3 .star i, .bodycontainer .breakfast3 .row .col-sm-2 .star i, .bodycontainer .breakfast3 .row .col-sm-3 .star i {
+  color: #d3ced2;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 .star i.active, .bodycontainer .breakfast1 .row .col-sm-3 .star i.active, .bodycontainer .breakfast2 .row .col-sm-2 .star i.active, .bodycontainer .breakfast2 .row .col-sm-3 .star i.active, .bodycontainer .breakfast3 .row .col-sm-2 .star i.active, .bodycontainer .breakfast3 .row .col-sm-3 .star i.active {
+  color: #ff9f00;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 h4, .bodycontainer .breakfast1 .row .col-sm-3 h4, .bodycontainer .breakfast2 .row .col-sm-2 h4, .bodycontainer .breakfast2 .row .col-sm-3 h4, .bodycontainer .breakfast3 .row .col-sm-2 h4, .bodycontainer .breakfast3 .row .col-sm-3 h4 {
+  display: inline;
+  margin-right: 10px;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 span, .bodycontainer .breakfast1 .row .col-sm-3 span, .bodycontainer .breakfast2 .row .col-sm-2 span, .bodycontainer .breakfast2 .row .col-sm-3 span, .bodycontainer .breakfast3 .row .col-sm-2 span, .bodycontainer .breakfast3 .row .col-sm-3 span {
+  color: #909090;
+  text-decoration: line-through;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 .greenlable, .bodycontainer .breakfast1 .row .col-sm-2 .yellowlable, .bodycontainer .breakfast1 .row .col-sm-2 .yellowlable2, .bodycontainer .breakfast1 .row .col-sm-3 .greenlable, .bodycontainer .breakfast1 .row .col-sm-3 .yellowlable, .bodycontainer .breakfast1 .row .col-sm-3 .yellowlable2, .bodycontainer .breakfast2 .row .col-sm-2 .greenlable, .bodycontainer .breakfast2 .row .col-sm-2 .yellowlable, .bodycontainer .breakfast2 .row .col-sm-2 .yellowlable2, .bodycontainer .breakfast2 .row .col-sm-3 .greenlable, .bodycontainer .breakfast2 .row .col-sm-3 .yellowlable, .bodycontainer .breakfast2 .row .col-sm-3 .yellowlable2, .bodycontainer .breakfast3 .row .col-sm-2 .greenlable, .bodycontainer .breakfast3 .row .col-sm-2 .yellowlable, .bodycontainer .breakfast3 .row .col-sm-2 .yellowlable2, .bodycontainer .breakfast3 .row .col-sm-3 .greenlable, .bodycontainer .breakfast3 .row .col-sm-3 .yellowlable, .bodycontainer .breakfast3 .row .col-sm-3 .yellowlable2 {
+  background-color: #388e3c;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 .yellowlable, .bodycontainer .breakfast1 .row .col-sm-3 .yellowlable, .bodycontainer .breakfast2 .row .col-sm-2 .yellowlable, .bodycontainer .breakfast2 .row .col-sm-3 .yellowlable, .bodycontainer .breakfast3 .row .col-sm-2 .yellowlable, .bodycontainer .breakfast3 .row .col-sm-3 .yellowlable {
+  background-color: #ffc700;
+  top: 45px;
+}
+.bodycontainer .breakfast1 .row .col-sm-2 .yellowlable2, .bodycontainer .breakfast1 .row .col-sm-3 .yellowlable2, .bodycontainer .breakfast2 .row .col-sm-2 .yellowlable2, .bodycontainer .breakfast2 .row .col-sm-3 .yellowlable2, .bodycontainer .breakfast3 .row .col-sm-2 .yellowlable2, .bodycontainer .breakfast3 .row .col-sm-3 .yellowlable2 {
+  background-color: #ffc700;
+  top: 18px;
+}
+.bodycontainer .breakfast1.active, .bodycontainer .breakfast2.active, .bodycontainer .breakfast3.active {
+  display: block;
+}
+.bodycontainer .breakfast2 {
+  display: none;
+}
+.bodycontainer .breakfast2.active {
+  display: block;
+}
+.bodycontainer .breakfast3 {
+  display: none;
+}
+.bodycontainer .breakfast3.active {
+  display: block;
+}
+.bodycontainer .midbannercontainer {
+  margin-bottom: 60px;
+}
+.bodycontainer .midbannercontainer .midbanner1, .bodycontainer .midbannercontainer .midbanner2 {
+  background-color: #f7f5ff;
+  padding: 35px 0px 0px 30px;
+}
+.bodycontainer .midbannercontainer .midbanner1 .midbanner1content, .bodycontainer .midbannercontainer .midbanner2 .midbanner1content {
+  display: inline;
+  float: left;
+}
+.bodycontainer .midbannercontainer .midbanner1 .midbanner1content p, .bodycontainer .midbannercontainer .midbanner2 .midbanner1content p {
+  font-weight: bold;
+}
+.bodycontainer .midbannercontainer .midbanner1 .midbanner1content h3, .bodycontainer .midbannercontainer .midbanner2 .midbanner1content h3 {
+  margin-top: 10px;
+}
+.bodycontainer .midbannercontainer .midbanner1 .midbanner1content button, .bodycontainer .midbannercontainer .midbanner2 .midbanner1content button {
+  background-color: #26901b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 18px;
+  margin-top: 15px;
+}
+.bodycontainer .midbannercontainer .midbanner1 img, .bodycontainer .midbannercontainer .midbanner2 img {
+  float: right;
+}
+.bodycontainer .midbannercontainer .midbanner2 {
+  background-color: #fdf0de;
+}
+.bodycontainer .grocerycontainer .groceryproduct {
+  margin-top: 15px;
+}
+.bodycontainer .grocerycontainer .groceryproduct .groceryimg img {
+  width: 100%;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub {
+  border: 1px solid #e9e9e9;
+  margin: 3px 3px 3px 3px;
+  padding: 10px 6px 20px;
+  line-height: 10px;
+  position: relative;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub p {
+  font-size: 14px;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub .star i {
+  color: #d3ced2;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub .star i.active {
+  color: #ff9f00;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub h4 {
+  display: inline;
+  margin-right: 10px;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub span {
+  color: #909090;
+  text-decoration: line-through;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub .greenlable, .bodycontainer .grocerycontainer .groceryproduct .grocerysub .yellowlable2 {
+  background-color: #388e3c;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+}
+.bodycontainer .grocerycontainer .groceryproduct .grocerysub .yellowlable2 {
+  background-color: #ffc700;
+  top: 18px;
+}
+.bodycontainer .bigbannercontainer {
+  margin: 50px -15px;
+  background: url(../images/bg.webp) no-repeat 0px -30px/100% orange;
+  height: 512px;
+}
+.bodycontainer .bigbannercontainer .row {
+  margin: 0px 0px;
+}
+.bodycontainer .bigbannercontainer .row .countdowncontainer {
+  padding-top: 55px;
+}
+.bodycontainer .bigbannercontainer .row .countdowncontainer span {
+  font-weight: bold;
+  color: black;
+}
+.bodycontainer .bigbannercontainer .row .countdowncontainer h3 {
+  line-height: 10px;
+  font-size: 25px;
+}
+.bodycontainer .bigbannercontainer .row .countdowncontainer .greentext {
+  color: #26901b;
+  font-size: 18px;
+  line-height: 60px;
+}
+.bodycontainer .bigbannercontainer .row .countdowncontainer h4 i {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.bodycontainer .bigbannercontainer .row .countdowncontainer .countcontainer {
+  margin: 40px 0px 20px;
+}
+.bodycontainer .bigbannercontainer .row .countdowncontainer .countcontainer .countdownsub {
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 8px;
+}
+.bodycontainer .bigbannercontainer .row .countdowncontainer button {
+  background-color: #26901b;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 5px;
+}
+.bodycontainer .bigbannercontainer .row .countdowncontainer button i {
+  background-color: white;
+  color: #26901b;
+  margin-left: 5px;
+  padding: 3px 9px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 15px;
+  text-align: center;
+}
+.bodycontainer .manbannercontainer {
+  background-color: #d8f1e5;
+  margin: 0px -15px;
+}
+.bodycontainer .manbannercontainer .row {
+  margin: 0px 0px;
+}
+.bodycontainer .manbannercontainer .row .emailidcontainer {
+  text-align: center;
+  padding-top: 90px;
+}
+.bodycontainer .manbannercontainer .row .emailidcontainer .signupcontainer {
+  background-color: white;
+  width: 450px;
+  padding: 3px;
+  border-radius: 50px;
+  margin: 25px 0px 0px 40px;
+}
+.bodycontainer .manbannercontainer .row .emailidcontainer .signupcontainer span {
+  float: right;
+  background-color: #26901b;
+  color: white;
+  border-radius: 50px;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+.bodycontainer .manbannercontainer .row .emailidcontainer .signupcontainer input {
+  float: left;
+  border: none;
+  outline: none;
+  position: relative;
+  top: 8px;
+  left: 16px;
+}
+.bodycontainer .tagcontainer {
+  margin: 40px 15px 18px;
+}
+.bodycontainer .tagcontainer .col-sm-2, .bodycontainer .tagcontainer .col-sm-3 {
+  width: 257px;
+  margin: 0px 3px;
+  text-align: center;
+  font-size: 50px;
+  padding: 25px 0px;
+  background-color: #f4f6fa;
+}
+.bodycontainer .tagcontainer .col-sm-2 i, .bodycontainer .tagcontainer .col-sm-3 i {
+  color: #388e3c;
+}
+.bodycontainer .readmorecontainer {
+  margin-bottom: 45px;
+}
+.bodycontainer .readmorecontainer .readmoreimg img {
+  width: 100%;
+}
+.bodycontainer .readmorecontainer .readmorecont {
+  padding: 15px 10px;
+  border: 1px solid #e9e9e9;
+}
+.bodycontainer .readmorecontainer .readmorecont span {
+  margin: 0px 15px 0px 5px;
+  color: #575757;
+}
+.bodycontainer .readmorecontainer .readmorecont i {
+  color: #575757;
+}
+.bodycontainer .readmorecontainer .readmorecont p {
+  line-height: 30px;
+  margin: 20px 0px;
+  color: #575757;
+}
+.bodycontainer .readmorecontainer .readmorecont h5 i {
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.footercontainer {
+  margin: 0px -15px;
+  background: url(../images/footer-bg.webp) no-repeat 0px 0px/100% #001a1a;
+  color: white;
+  padding: 48px 15px;
+  border-bottom: 1px solid #002723;
+}
+.footercontainer img {
+  width: 44%;
+}
+.footercontainer a {
+  display: block;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+}
+.footercontainer a:hover {
+  color: #26901b;
+}
+.footercontainer p {
+  line-height: 30px;
+}
+.footercontainer i {
+  margin-right: 10px;
+}
+.footercontainer h3 {
+  margin: 0px 0px 30px;
+}
+.footercontainer .socialmediacontainer a {
+  display: inline;
+}
+.footercontainer .socialmediacontainer a i {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  padding: 6px 0px;
+  margin-right: 3px;
+}
+.footercontainer .socialmediacontainer a .facebook {
+  background-color: #385693;
+}
+.footercontainer .socialmediacontainer a .twitter {
+  background-color: #40bff5;
+}
+.footercontainer .socialmediacontainer a .linkedin {
+  background-color: #238cc8;
+}
+.footercontainer .socialmediacontainer a .instagram {
+  background-color: #d02a52;
+}
+.footercontainer .socialmediacontainer a .pinterest {
+  background-color: #ff0084;
+}
+.footercontainer .socialmediacontainer a .whatsapp {
+  background-color: #26901b;
+}
+.footercontainer .socialmediacontainer a .youtube {
+  background-color: #f90002;
+}
+
+.footercontainer2 {
+  background-color: #001a1a;
+  color: white;
+  margin: 0px -15px;
+  padding: 35px 15px;
+}
+.footercontainer2 .copyrights {
+  display: inline;
+}
+.footercontainer2 .copyrights a {
+  text-decoration: none;
+  color: white;
+}
+.footercontainer2 .paymentcard {
+  float: right;
+}
+.footercontainer2 .paymentcard i {
+  font-size: 35px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.productdetail {
+  padding: 35px 0px;
+}
+.productdetail .smallimg img {
+  border: 1px solid #e9e9e9;
+  margin-bottom: 15px;
+  width: 65%;
+}
+.productdetail .bigimg {
+  height: 554px;
+  width: 480px;
+  border: 1px solid #e9e9e9;
+  margin-left: -80px;
+}
+.productdetail .bigimg img {
+  width: 100%;
+  display: none;
+}
+.productdetail .bigimg img.active {
+  display: block;
+}
+.productdetail .bigimgcontent .bigimgcontent1, .productdetail .bigimgcontent .bigimgcontent2, .productdetail .bigimgcontent .bigimgcontent3, .productdetail .bigimgcontent .bigimgcontent4 {
+  display: none;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .star i, .productdetail .bigimgcontent .bigimgcontent2 .star i, .productdetail .bigimgcontent .bigimgcontent3 .star i, .productdetail .bigimgcontent .bigimgcontent4 .star i {
+  color: #d3ced2;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .star i.active, .productdetail .bigimgcontent .bigimgcontent2 .star i.active, .productdetail .bigimgcontent .bigimgcontent3 .star i.active, .productdetail .bigimgcontent .bigimgcontent4 .star i.active {
+  color: #ff9f00;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .greentext, .productdetail .bigimgcontent .bigimgcontent2 .greentext, .productdetail .bigimgcontent .bigimgcontent3 .greentext, .productdetail .bigimgcontent .bigimgcontent4 .greentext {
+  color: #288f1a;
+  margin: 30px 0px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer, .productdetail .bigimgcontent .bigimgcontent1 .add, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer, .productdetail .bigimgcontent .bigimgcontent2 .add, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer, .productdetail .bigimgcontent .bigimgcontent3 .add, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer, .productdetail .bigimgcontent .bigimgcontent4 .add {
+  margin: 40px 0px 30px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .sub, .productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .num, .productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .add, .productdetail .bigimgcontent .bigimgcontent1 .add .sub, .productdetail .bigimgcontent .bigimgcontent1 .add .num, .productdetail .bigimgcontent .bigimgcontent1 .add .add, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .sub, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .num, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .add, .productdetail .bigimgcontent .bigimgcontent2 .add .sub, .productdetail .bigimgcontent .bigimgcontent2 .add .num, .productdetail .bigimgcontent .bigimgcontent2 .add .add, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .sub, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .num, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .add, .productdetail .bigimgcontent .bigimgcontent3 .add .sub, .productdetail .bigimgcontent .bigimgcontent3 .add .num, .productdetail .bigimgcontent .bigimgcontent3 .add .add, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .sub, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .num, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .add, .productdetail .bigimgcontent .bigimgcontent4 .add .sub, .productdetail .bigimgcontent .bigimgcontent4 .add .num, .productdetail .bigimgcontent .bigimgcontent4 .add .add {
+  display: inline;
+  border: 1px solid #e9e9e9;
+  padding: 10px 8px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .sub i, .productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .num i, .productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .add i, .productdetail .bigimgcontent .bigimgcontent1 .add .sub i, .productdetail .bigimgcontent .bigimgcontent1 .add .num i, .productdetail .bigimgcontent .bigimgcontent1 .add .add i, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .sub i, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .num i, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .add i, .productdetail .bigimgcontent .bigimgcontent2 .add .sub i, .productdetail .bigimgcontent .bigimgcontent2 .add .num i, .productdetail .bigimgcontent .bigimgcontent2 .add .add i, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .sub i, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .num i, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .add i, .productdetail .bigimgcontent .bigimgcontent3 .add .sub i, .productdetail .bigimgcontent .bigimgcontent3 .add .num i, .productdetail .bigimgcontent .bigimgcontent3 .add .add i, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .sub i, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .num i, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .add i, .productdetail .bigimgcontent .bigimgcontent4 .add .sub i, .productdetail .bigimgcontent .bigimgcontent4 .add .num i, .productdetail .bigimgcontent .bigimgcontent4 .add .add i {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .num, .productdetail .bigimgcontent .bigimgcontent1 .add .num, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .num, .productdetail .bigimgcontent .bigimgcontent2 .add .num, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .num, .productdetail .bigimgcontent .bigimgcontent3 .add .num, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .num, .productdetail .bigimgcontent .bigimgcontent4 .add .num {
+  margin: 0px -5px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .greenbutton, .productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent1 .add .greenbutton, .productdetail .bigimgcontent .bigimgcontent1 .add .yellowbutton, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .greenbutton, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent2 .add .greenbutton, .productdetail .bigimgcontent .bigimgcontent2 .add .yellowbutton, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .greenbutton, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent3 .add .greenbutton, .productdetail .bigimgcontent .bigimgcontent3 .add .yellowbutton, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .greenbutton, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent4 .add .greenbutton, .productdetail .bigimgcontent .bigimgcontent4 .add .yellowbutton {
+  display: inline;
+  background-color: #288f1a;
+  color: white;
+  font-weight: bold;
+  padding: 8px 40px;
+  border: none;
+  margin-left: 8px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent1 .add .yellowbutton, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent2 .add .yellowbutton, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent3 .add .yellowbutton, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent4 .add .yellowbutton {
+  background-color: #f1ca09;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .heartcontainer, .productdetail .bigimgcontent .bigimgcontent2 .heartcontainer, .productdetail .bigimgcontent .bigimgcontent3 .heartcontainer, .productdetail .bigimgcontent .bigimgcontent4 .heartcontainer {
+  font-weight: bold;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .heartcontainer i, .productdetail .bigimgcontent .bigimgcontent2 .heartcontainer i, .productdetail .bigimgcontent .bigimgcontent3 .heartcontainer i, .productdetail .bigimgcontent .bigimgcontent4 .heartcontainer i {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .heartcontainer span, .productdetail .bigimgcontent .bigimgcontent2 .heartcontainer span, .productdetail .bigimgcontent .bigimgcontent3 .heartcontainer span, .productdetail .bigimgcontent .bigimgcontent4 .heartcontainer span {
+  margin-right: 20px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .typesoffruit, .productdetail .bigimgcontent .bigimgcontent2 .typesoffruit, .productdetail .bigimgcontent .bigimgcontent3 .typesoffruit, .productdetail .bigimgcontent .bigimgcontent4 .typesoffruit {
+  margin: 30px 0px;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .typesoffruit h4, .productdetail .bigimgcontent .bigimgcontent2 .typesoffruit h4, .productdetail .bigimgcontent .bigimgcontent3 .typesoffruit h4, .productdetail .bigimgcontent .bigimgcontent4 .typesoffruit h4 {
+  display: inline;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .socialmediaicon h4, .productdetail .bigimgcontent .bigimgcontent2 .socialmediaicon h4, .productdetail .bigimgcontent .bigimgcontent3 .socialmediaicon h4, .productdetail .bigimgcontent .bigimgcontent4 .socialmediaicon h4 {
+  display: inline;
+}
+.productdetail .bigimgcontent .bigimgcontent1 .socialmediaicon i, .productdetail .bigimgcontent .bigimgcontent2 .socialmediaicon i, .productdetail .bigimgcontent .bigimgcontent3 .socialmediaicon i, .productdetail .bigimgcontent .bigimgcontent4 .socialmediaicon i {
+  text-decoration: none;
+  color: black;
+  margin: 0px 7px;
+  font-size: 18px;
+}
+.productdetail .bigimgcontent .bigimgcontent1.active, .productdetail .bigimgcontent .bigimgcontent2.active, .productdetail .bigimgcontent .bigimgcontent3.active, .productdetail .bigimgcontent .bigimgcontent4.active {
+  display: block;
+}
+
+.productreviewcontainer {
+  margin: 40px 0px 70px;
+}
+.productreviewcontainer .productreviewheader {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 10px;
+}
+.productreviewcontainer .productreviewheader a {
+  text-decoration: none;
+  color: black;
+  display: inline;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-right: 30px;
+}
+.productreviewcontainer .productreviewheader a.active {
+  border-bottom: 2px solid #26901b;
+  font-weight: bold;
+}
+.productreviewcontainer .productparagraph1, .productreviewcontainer .productparagraph2 {
+  margin: 30px 0px 70px;
+  line-height: 30px;
+  display: none;
+}
+.productreviewcontainer .productparagraph1.active, .productreviewcontainer .productparagraph2.active {
+  display: block;
+}
+
+.bestsellingproductsheader {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 10px;
+}
+.bestsellingproductsheader h3 {
+  display: inline;
+  border-bottom: 2px solid #26901b;
+  padding-bottom: 10px;
+}
+
+.breakfast {
+  margin: 15px 15px 50px 15px;
+}
+.breakfast .row .col-sm-2, .breakfast .row .col-sm-3 {
+  width: 257px;
+  border: 1px solid #e9e9e9;
+  margin: 3px 3px 3px 3px;
+  padding: 10px 6px 20px;
+  line-height: 10px;
+  position: relative;
+}
+.breakfast .row .col-sm-2 img, .breakfast .row .col-sm-3 img {
+  width: 100%;
+}
+.breakfast .row .col-sm-2 p, .breakfast .row .col-sm-3 p {
+  font-size: 14px;
+}
+.breakfast .row .col-sm-2 h5, .breakfast .row .col-sm-3 h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.breakfast .row .col-sm-2 .star i, .breakfast .row .col-sm-3 .star i {
+  color: #d3ced2;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.breakfast .row .col-sm-2 .star i.active, .breakfast .row .col-sm-3 .star i.active {
+  color: #ff9f00;
+}
+.breakfast .row .col-sm-2 h4, .breakfast .row .col-sm-3 h4 {
+  display: inline;
+  margin-right: 10px;
+}
+.breakfast .row .col-sm-2 span, .breakfast .row .col-sm-3 span {
+  color: #909090;
+  text-decoration: line-through;
+}
+.breakfast .row .col-sm-2 .greenlable, .breakfast .row .col-sm-2 .yellowlable, .breakfast .row .col-sm-2 .yellowlable2, .breakfast .row .col-sm-3 .greenlable, .breakfast .row .col-sm-3 .yellowlable, .breakfast .row .col-sm-3 .yellowlable2 {
+  background-color: #388e3c;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+}
+.breakfast .row .col-sm-2 .yellowlable, .breakfast .row .col-sm-3 .yellowlable {
+  background-color: #ffc700;
+  top: 45px;
+}
+.breakfast .row .col-sm-2 .yellowlable2, .breakfast .row .col-sm-3 .yellowlable2 {
+  background-color: #ffc700;
+  top: 18px;
+}
+
+.productsviewscontainer .fruitandwashingproduct {
+  background-color: #efefef;
+  height: 175px;
+  margin: 0px -15px;
+  position: relative;
+  overflow: hidden;
+}
+.productsviewscontainer .fruitandwashingproduct .fruitcontent {
+  position: absolute;
+  top: 16%;
+  left: 47%;
+}
+.productsviewscontainer .fruitandwashingproduct .fruitcontent h1 {
+  font-size: 40px;
+}
+.productsviewscontainer .fruitandwashingproduct .fruitscont {
+  float: left;
+}
+.productsviewscontainer .fruitandwashingproduct .fruitscont img {
+  width: 100%;
+}
+.productsviewscontainer .fruitandwashingproduct .soapscont {
+  float: right;
+}
+.productsviewscontainer .fruitandwashingproduct .soapscont img {
+  width: 100%;
+}
+.productsviewscontainer .productviewoverall {
+  margin: 30px 15px;
+}
+.productsviewscontainer .productviewoverall .col-sm-3 {
+  border: 1px solid #e9e9e9;
+}
+.productsviewscontainer .productviewoverall .col-sm-3 .filterbyprice {
+  padding: 18px 10px;
+}
+.productsviewscontainer .productviewoverall .col-sm-3 .filterbyprice .pricelist div {
+  margin: 15px 0px;
+}
+.productsviewscontainer .productviewoverall .col-sm-3 .filterbyprice .pricelist div input {
+  margin-right: 8px;
+}
+.productsviewscontainer .productviewoverall .viewheading {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 12px;
+}
+.productsviewscontainer .productviewoverall .viewheading h4 {
+  display: inline;
+  margin-right: 8px;
+}
+.productsviewscontainer .productviewoverall .viewicon {
+  float: right;
+}
+.productsviewscontainer .productviewoverall .viewicon i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.productsviewscontainer .productviewoverall .viewicon .custom-dropdown1 {
+  display: inline;
+}
+.productsviewscontainer .productviewoverall .viewicon .custom-dropdown1 button {
+  border: 1px solid #e9e9e9;
+  background-color: white;
+  padding: 8px 15px;
+}
+.productsviewscontainer .productviewoverall .viewicon .custom-dropdown1 button i {
+  font-size: 16px;
+  margin-right: 0px;
+}
+.productsviewscontainer .productviewoverall .viewicon .custom-dropdown2 {
+  display: inline-block;
+}
+.productsviewscontainer .productviewoverall .viewicon .custom-dropdown2 i {
+  margin-left: 60px;
+  margin-right: 0px;
+  font-size: 16px;
+}
+.productsviewscontainer .productviewoverall .viewicon .custom-dropdown2 button {
+  border: 1px solid #e9e9e9;
+  background-color: white;
+  padding: 8px 15px;
+}
+.productsviewscontainer .productviewoverall .gridcontainer {
+  margin-top: 18px;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row {
+  margin: 0px 0px;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 {
+  margin: 3px 3px;
+  border: 1px solid #e9e9e9;
+  width: 233px;
+  padding: 10px 6px 20px;
+  line-height: 10px;
+  position: relative;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 img {
+  width: 100%;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 p {
+  font-size: 14px;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 .star i {
+  color: #d3ced2;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 .star i.active {
+  color: #ff9f00;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 h4 {
+  display: inline;
+  margin-right: 10px;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 span {
+  color: #909090;
+  text-decoration: line-through;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 .greenlable, .productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 .yellowlable, .productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 .yellowlable2 {
+  background-color: #388e3c;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 .yellowlable {
+  background-color: #ffc700;
+  top: 45px;
+}
+.productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 .yellowlable2 {
+  background-color: #ffc700;
+  top: 18px;
+}
+.productsviewscontainer .productviewoverall .listcontainer {
+  margin-top: 18px;
+  display: none;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row {
+  margin: 0px 0px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 {
+  margin: 3px 3px;
+  border: 1px solid #e9e9e9;
+  padding: 10px 6px 20px;
+  line-height: 10px;
+  position: relative;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .col-sm-3 {
+  border: none;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .col-sm-3 img {
+  width: 100%;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent1 {
+  margin-top: 20px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent1 p {
+  font-size: 14px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent1 h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent1 .star i {
+  color: #d3ced2;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent1 .star i.active {
+  color: #ff9f00;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent1 .graytext {
+  font-size: 16px;
+  line-height: 24px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent2 {
+  margin-top: 20px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent2 h4 {
+  display: inline;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent2 span {
+  color: #909090;
+  text-decoration: line-through;
+  font-size: 16px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent2 button {
+  border: none;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  padding: 12px;
+  font-weight: bold;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .listcontent2 i {
+  margin-left: 10px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .greenlable, .productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .yellowlable, .productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .yellowlable2 {
+  background-color: #388e3c;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .yellowlable {
+  background-color: #ffc700;
+  top: 45px;
+}
+.productsviewscontainer .productviewoverall .listcontainer .row .col-sm-12 .yellowlable2 {
+  background-color: #ffc700;
+  top: 18px;
+}
+.productsviewscontainer .productviewoverall .pageshift {
+  text-align: center;
+  margin: 30px 0px;
+}
+.productsviewscontainer .productviewoverall .pageshift a {
+  text-decoration: none;
+}
+.productsviewscontainer .productviewoverall .pageshift a span {
+  color: black;
+  padding: 7px 12px;
+}
+.productsviewscontainer .productviewoverall .pageshift a span.active {
+  color: white;
+  background-color: #26901b;
+  padding: 7px 12px;
+}
+.productsviewscontainer .productviewoverall .pageshift button {
+  border: none;
+  background-color: white;
+  color: #26901b;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .headercontainer .searchcontainer {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .headercontainer .searchcontainer input {
+    font-size: 14px;
+    display: none;
+  }
+  .headercontainer .searchcontainer button {
+    display: none;
+  }
+  .headercontainer .iconcontainer {
+    float: left;
+    margin: 5px 0px 20px 30px;
+  }
+  .headercontainer2 {
+    margin-top: 40px;
+  }
+  .headercontainer2 .row .custommenu-button .btn-default {
+    width: 100%;
+  }
+  .headercontainer2 .row .menucontainer {
+    margin-left: 0px;
+  }
+  .headercontainer2 .row .menucontainer .custom-dropdown .buttondrop {
+    display: block;
+    margin: 10px 0px;
+  }
+  .headercontainer2 .row .menucontainer .custom-dropdown .dropdown-menu {
+    margin-top: 0px;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .carousel-caption {
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 0px;
+    height: 190px;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .carousel-caption h1 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .carousel-caption button {
+    margin-top: 0px;
+    padding: 6px 12px;
+  }
+  .bodycontainer .productcirclecontainer {
+    margin-top: 20px;
+  }
+  .bodycontainer .productcirclecontainer .circleimage img {
+    width: 50%;
+  }
+  .bodycontainer .breakfastcontainer .bestsellingproductsheader .menucontainer {
+    float: left;
+    margin-top: 20px;
+  }
+  .bodycontainer .breakfastcontainer .bestsellingproductsheader .menucontainer a {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .bodycontainer .breakfastcontainer .bestsellingproductsheader .menucontainer a h4 {
+    margin: 0px 0px 20px 0px;
+    padding-bottom: 5px;
+  }
+  .bodycontainer .breakfast1 .row .col-sm-2, .bodycontainer .breakfast1 .row .col-sm-3, .bodycontainer .breakfast2 .row .col-sm-2, .bodycontainer .breakfast2 .row .col-sm-3, .bodycontainer .breakfast3 .row .col-sm-2, .bodycontainer .breakfast3 .row .col-sm-3 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .bodycontainer .midbannercontainer {
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .bodycontainer .midbannercontainer .midbanner1 {
+    margin-bottom: 20px;
+  }
+  .bodycontainer .groceryproduct .grocerysub {
+    margin-bottom: 15px;
+  }
+  .bodycontainer .bigbannercontainer {
+    margin: 20px -15px;
+    background: url(../images/bg.webp) no-repeat 0px 0px/100% orange;
+    height: 570px;
+  }
+  .bodycontainer .bigbannercontainer .row .countdowncontainer {
+    margin-top: 110px;
+  }
+  .bodycontainer .bigbannercontainer .row .countdowncontainer .countcontainer {
+    margin-top: 20px;
+  }
+  .bodycontainer .breakfastcontainer .breakfast .row .col-sm-2, .bodycontainer .breakfastcontainer .breakfast .row .col-sm-3 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .bodycontainer .manbannercontainer .row .emailidcontainer .signupcontainer {
+    width: 100%;
+    margin: 25px 0px;
+  }
+  .bodycontainer .manbannercontainer .row .col-sm-7 img {
+    width: 100%;
+  }
+  .bodycontainer .tagcontainer .col-sm-2, .bodycontainer .tagcontainer .col-sm-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .bodycontainer .readmorecontainer .readmorecont h3 {
+    font-size: 22px;
+  }
+  .footercontainer .fcon1, .footercontainer .fcon2, .footercontainer .fcon3, .footercontainer .fcon4 {
+    margin-bottom: 50px;
+  }
+  .footercontainer2 {
+    text-align: center;
+  }
+  .footercontainer2 .paymentcard {
+    float: none;
+  }
+  .footercontainer2 .paymentcard i {
+    margin: 20px 4px 20px 0px;
+  }
+  .productdetail .smallimg img {
+    width: 24%;
+  }
+  .productdetail .bigimg {
+    width: 100%;
+    height: 330px;
+    margin-left: 0px;
+  }
+  .productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .greenbutton, .productdetail .bigimgcontent .bigimgcontent1 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .greenbutton, .productdetail .bigimgcontent .bigimgcontent2 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .greenbutton, .productdetail .bigimgcontent .bigimgcontent3 .buttoncontainer .yellowbutton, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .greenbutton, .productdetail .bigimgcontent .bigimgcontent4 .buttoncontainer .yellowbutton {
+    padding: 8px 12px;
+  }
+  .breakfastcontainer .breakfast .col-sm-2, .breakfastcontainer .breakfast .col-sm-3 {
+    width: 100%;
+  }
+  .productsviewscontainer .fruitandwashingproduct .fruitcontent {
+    top: 5%;
+    left: 38%;
+  }
+  .productsviewscontainer .productviewoverall .gridcontainer .row .col-sm-3 {
+    width: 100%;
+  }
+  .productsviewscontainer .productviewoverall .listcontainer img {
+    width: 100%;
+  }
+  .productsviewscontainer .productviewoverall .listcontainer .listcontent2 button {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .viewheading {
+    margin-top: 20px;
+  }
+  .viewheading span {
+    display: none;
+  }
+  .viewheading button {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

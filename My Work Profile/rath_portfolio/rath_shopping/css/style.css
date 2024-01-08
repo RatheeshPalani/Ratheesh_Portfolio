@@ -1,0 +1,1550 @@
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto-regular";
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Roboto-bold";
+}
+body .dropbtn {
+  background-color: white;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+body .dropbtn:hover {
+  background-color: #a3abb2;
+}
+body .dropdown {
+  position: relative;
+  display: inline-block;
+}
+body .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+body .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+body .dropdown-content a:hover {
+  background-color: white;
+}
+body .dropdown:hover .dropdown-content {
+  display: block;
+}
+body .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.scroll-top {
+  height: 40px;
+  width: 40px;
+  background: black;
+  color: white;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  outline: none;
+  border: none;
+  padding-bottom: 4px;
+  font-size: 20px;
+  scroll-behavior: smooth;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+.scroll-top:hover, .scroll-top.active {
+  background-color: #ed4041;
+  transform: rotate(0deg);
+}
+
+.fclear {
+  clear: both;
+}
+
+.headercontainer {
+  padding: 35px 0px;
+}
+.headercontainer .searchcontainer {
+  border: 2px solid #ebeef1;
+  width: 574px;
+  margin-left: 86px;
+  padding: 0px 0px 0px 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.headercontainer .searchcontainer .custom-dropdown {
+  display: inline;
+  color: #78a2ce;
+}
+.headercontainer .searchcontainer .custom-dropdown .buttondrop {
+  border: none;
+  background-color: white;
+  padding: 10px 10px;
+  outline: none;
+  color: black;
+}
+.headercontainer .searchcontainer .custom-dropdown i {
+  margin-left: 30px;
+}
+.headercontainer .searchcontainer .custom-dropdown .dropdown-menu {
+  margin-top: 30px;
+}
+.headercontainer .searchcontainer .custom-dropdown .dropdown-menu li a {
+  padding: 10px 20px;
+}
+.headercontainer .searchcontainer input {
+  display: inline-block;
+  border: none;
+  border-left: 1px solid #ebeef1;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #80889d;
+  margin-top: 8px;
+  outline: none;
+}
+.headercontainer .searchcontainer .searchicon {
+  background-color: #ed4041;
+  color: white;
+  font-size: 20px;
+  float: right;
+  padding: 12px;
+  border: 1px solid #ebeef1;
+  border-radius: 0px 10px 10px 0px;
+}
+.headercontainer .iconcontainer {
+  float: right;
+}
+.headercontainer .iconcontainer a {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 6px;
+}
+.headercontainer .iconcontainer a .ico i {
+  font-size: 30px;
+  color: #80889d;
+}
+.headercontainer .iconcontainer a p {
+  color: black;
+  font-size: 14px;
+  margin-right: 15px;
+}
+.headercontainer .iconcontainer a span {
+  color: white;
+  background-color: #ed4041;
+  padding: 3px 7px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  top: -16px;
+  left: -45px;
+}
+
+.headercontainer2 {
+  margin-bottom: 5px;
+}
+.headercontainer2 .custommenu-button .btn-default {
+  background-color: #ffe500;
+  padding: 8px 8px;
+  width: 240px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+.headercontainer2 .custommenu-button .btn-default span {
+  position: relative;
+  top: -2px;
+}
+.headercontainer2 .custommenu-button .btn-default i {
+  font-weight: normal;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.headercontainer2 .custommenu-button .btn-default .angledown {
+  float: right;
+}
+.headercontainer2 .custommenu-button .dropdown-menu {
+  width: 240px;
+  margin-top: 20px;
+}
+.headercontainer2 .custommenu-button .dropdown-menu .divider {
+  margin: 0px 0px;
+}
+.headercontainer2 .custommenu-button .dropdown-menu li i {
+  float: right;
+  font-size: 20px;
+}
+.headercontainer2 .custommenu-button .dropdown-menu li span {
+  color: white;
+  background-color: #ed4041;
+  padding: 3px 7px;
+  border-radius: 14px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.headercontainer2 .custommenu-button .dropdown-menu li a {
+  padding: 9px 20px;
+  font-size: 14px;
+}
+.headercontainer2 .custommenu-button .dropdown-menu .camerasub .custom-secondary {
+  display: none;
+  right: -165px;
+  top: 45px;
+}
+.headercontainer2 .custommenu-button .dropdown-menu .camerasub:hover .custom-secondary {
+  display: block;
+}
+.headercontainer2 .custommenu-button .dropdown-menu .desktop .custom-secondary2 {
+  display: none;
+  right: -168px;
+  top: 120px;
+}
+.headercontainer2 .custommenu-button .dropdown-menu .desktop:hover .custom-secondary2 {
+  display: block;
+}
+.headercontainer2 .custommenu-button .dropdown-menu .hardware .custom-secondary3 {
+  display: none;
+  right: -165px;
+  top: 240px;
+}
+.headercontainer2 .custommenu-button .dropdown-menu .hardware:hover .custom-secondary3 {
+  display: block;
+}
+.headercontainer2 .menucontainer {
+  margin-left: 35px;
+}
+.headercontainer2 .menucontainer .custom-dropdown {
+  display: inline;
+  color: #78a2ce;
+}
+.headercontainer2 .menucontainer .custom-dropdown .buttondrop {
+  border: none;
+  background-color: white;
+  padding: 10px 10px;
+  outline: none;
+  color: black;
+  font-weight: bold;
+}
+.headercontainer2 .menucontainer .custom-dropdown .buttondrop.active {
+  color: #ed4041;
+}
+.headercontainer2 .menucontainer .custom-dropdown i {
+  margin-left: 6px;
+  font-size: 22px;
+  margin-top: 0px;
+}
+.headercontainer2 .menucontainer .custom-dropdown .dropdown-menu {
+  margin-top: 30px;
+}
+.headercontainer2 .menucontainer .custom-dropdown .dropdown-menu li a {
+  padding: 10px 18px;
+}
+.headercontainer2 .menucontainer .custom-dropdown .red {
+  background-color: #ed4041;
+  color: white;
+  font-size: 12px;
+  padding: 0px 8px;
+  border-radius: 10px;
+  position: absolute;
+  top: -26px;
+  left: 44px;
+}
+.headercontainer2 .socialmedia-icon {
+  float: right;
+}
+.headercontainer2 .socialmedia-icon .facebook, .headercontainer2 .socialmedia-icon .twitter, .headercontainer2 .socialmedia-icon .googleplus, .headercontainer2 .socialmedia-icon .linkedin, .headercontainer2 .socialmedia-icon .instagram {
+  background-color: #395498;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding: 7px 0px;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 12px;
+}
+.headercontainer2 .socialmedia-icon .twitter {
+  background-color: #5da9dd;
+}
+.headercontainer2 .socialmedia-icon .googleplus {
+  background-color: #ed4041;
+}
+.headercontainer2 .socialmedia-icon .linkedin {
+  background-color: #29a1d5;
+}
+.headercontainer2 .socialmedia-icon .instagram {
+  background-color: #00afc0;
+}
+
+.bannercontainer {
+  margin: 0px -15px 60px;
+}
+.bannercontainer .custom-carousel .carousel-inner .item1, .bannercontainer .custom-carousel .carousel-inner .item2 {
+  background: url("../images/homepage_1_slider_1_item_1_background.jpg") no-repeat -135px 0px/110% orange;
+  height: 400px;
+  overflow: hidden;
+}
+.bannercontainer .custom-carousel .carousel-inner .item1 img, .bannercontainer .custom-carousel .carousel-inner .item2 img {
+  width: 45%;
+  padding: 50px;
+  float: right;
+}
+.bannercontainer .custom-carousel .carousel-inner .item1 .carousel-caption, .bannercontainer .custom-carousel .carousel-inner .item2 .carousel-caption {
+  left: 21%;
+  text-align: left;
+  width: 450px;
+  top: 64px;
+  text-shadow: none;
+}
+.bannercontainer .custom-carousel .carousel-inner .item1 .carousel-caption span, .bannercontainer .custom-carousel .carousel-inner .item2 .carousel-caption span {
+  color: #ffe500;
+}
+.bannercontainer .custom-carousel .carousel-inner .item1 .carousel-caption h1, .bannercontainer .custom-carousel .carousel-inner .item2 .carousel-caption h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.bannercontainer .custom-carousel .carousel-inner .item1 .carousel-caption p, .bannercontainer .custom-carousel .carousel-inner .item2 .carousel-caption p {
+  font-size: 18px;
+}
+.bannercontainer .custom-carousel .carousel-inner .item2 {
+  background: url("../images/homepage_1_slider_1_item_2_background.jpg") no-repeat -135px 0px/110% orange;
+  height: 400px;
+  overflow: hidden;
+}
+.bannercontainer .custom-carousel .carousel-inner .item2 img {
+  width: 35%;
+  padding: 25px 100px 0px 0px;
+  float: right;
+}
+.bannercontainer .custom-carousel .carousel-inner .item2 .carousel-caption {
+  text-align: right;
+}
+
+.bodycontainer .productcontainer {
+  background-color: #f5f8fb;
+  margin: 0px -15px;
+  padding: 40px 15px 20px;
+}
+.bodycontainer .productcontainer .featurecontainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.bodycontainer .productcontainer .featurecontainer .content {
+  border-right: 1px solid #f5f8fb;
+}
+.bodycontainer .productcontainer .featurecontainer .content.bordernone {
+  border: none;
+}
+.bodycontainer .productcontainer .featurecontainer .content img {
+  position: relative;
+}
+.bodycontainer .productcontainer .featurecontainer .content .wording {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+}
+.bodycontainer .productcontainer .featurecontainer .content .wording h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.bodycontainer .productcontainer .featurecontainer .content .wording p {
+  font-size: 14px;
+  color: #80889d;
+}
+.bodycontainer .productcontainer .gagetcontainer {
+  margin: 40px 0px;
+}
+.bodycontainer .productcontainer .gagetcontainer .slide img {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.bodycontainer .productcontainer .gagetcontainer .slide .details {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: white;
+}
+.bodycontainer .productcontainer .gagetcontainer .slide .details h4 {
+  margin: 5px 0px;
+  font-size: 20px;
+}
+.bodycontainer .productcontainer .gagetcontainer .slide .details p {
+  margin-top: 18px;
+  font-size: 14px;
+}
+.bodycontainer .productcontainer .dealscontainer, .bodycontainer .productcontainer .dealscontainer2, .bodycontainer .productcontainer .recentblogcontainer, .bodycontainer .productcontainer .gridcontainer {
+  margin-bottom: 20px;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection, .bodycontainer .productcontainer .dealscontainer2 .headsection, .bodycontainer .productcontainer .recentblogcontainer .headsection, .bodycontainer .productcontainer .gridcontainer .headsection {
+  border-bottom: 1px solid #ebeef1;
+  padding-bottom: 20px;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection h3, .bodycontainer .productcontainer .dealscontainer2 .headsection h3, .bodycontainer .productcontainer .recentblogcontainer .headsection h3, .bodycontainer .productcontainer .gridcontainer .headsection h3 {
+  font-weight: bold;
+  display: inline;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection h3 span, .bodycontainer .productcontainer .dealscontainer2 .headsection h3 span, .bodycontainer .productcontainer .recentblogcontainer .headsection h3 span, .bodycontainer .productcontainer .gridcontainer .headsection h3 span {
+  color: #ed4041;
+  position: relative;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection h3 span::after, .bodycontainer .productcontainer .dealscontainer2 .headsection h3 span::after, .bodycontainer .productcontainer .recentblogcontainer .headsection h3 span::after, .bodycontainer .productcontainer .gridcontainer .headsection h3 span::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #ed4041;
+  display: inline-block;
+  position: absolute;
+  top: 48px;
+  left: 0px;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection .middlemenucontainer, .bodycontainer .productcontainer .dealscontainer2 .headsection .middlemenucontainer, .bodycontainer .productcontainer .recentblogcontainer .headsection .middlemenucontainer, .bodycontainer .productcontainer .gridcontainer .headsection .middlemenucontainer {
+  float: right;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection .middlemenucontainer span, .bodycontainer .productcontainer .dealscontainer2 .headsection .middlemenucontainer span, .bodycontainer .productcontainer .recentblogcontainer .headsection .middlemenucontainer span, .bodycontainer .productcontainer .gridcontainer .headsection .middlemenucontainer span {
+  margin-left: 25px;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection .middlemenucontainer span a, .bodycontainer .productcontainer .dealscontainer2 .headsection .middlemenucontainer span a, .bodycontainer .productcontainer .recentblogcontainer .headsection .middlemenucontainer span a, .bodycontainer .productcontainer .gridcontainer .headsection .middlemenucontainer span a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #a3abb2;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection .middlemenucontainer span a.active, .bodycontainer .productcontainer .dealscontainer2 .headsection .middlemenucontainer span a.active, .bodycontainer .productcontainer .recentblogcontainer .headsection .middlemenucontainer span a.active, .bodycontainer .productcontainer .gridcontainer .headsection .middlemenucontainer span a.active {
+  color: #ed4041;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection .angleicon, .bodycontainer .productcontainer .dealscontainer2 .headsection .angleicon, .bodycontainer .productcontainer .recentblogcontainer .headsection .angleicon, .bodycontainer .productcontainer .gridcontainer .headsection .angleicon {
+  font-size: 30px;
+  font-weight: bold;
+  display: inline;
+  float: right;
+}
+.bodycontainer .productcontainer .dealscontainer .headsection .angleicon a, .bodycontainer .productcontainer .dealscontainer2 .headsection .angleicon a, .bodycontainer .productcontainer .recentblogcontainer .headsection .angleicon a, .bodycontainer .productcontainer .gridcontainer .headsection .angleicon a {
+  text-decoration: none;
+  color: #394249;
+}
+.bodycontainer .productcontainer .dealscontainer .custom-carousel2 .carouselanother .carousel-control.left, .bodycontainer .productcontainer .dealscontainer2 .custom-carousel2 .carouselanother .carousel-control.left, .bodycontainer .productcontainer .recentblogcontainer .custom-carousel2 .carouselanother .carousel-control.left, .bodycontainer .productcontainer .gridcontainer .custom-carousel2 .carouselanother .carousel-control.left {
+  background-image: none;
+}
+.bodycontainer .productcontainer .dealscontainer .custom-carousel2 .carouselanother .carousel-control.right, .bodycontainer .productcontainer .dealscontainer2 .custom-carousel2 .carouselanother .carousel-control.right, .bodycontainer .productcontainer .recentblogcontainer .custom-carousel2 .carouselanother .carousel-control.right, .bodycontainer .productcontainer .gridcontainer .custom-carousel2 .carouselanother .carousel-control.right {
+  background-image: none;
+}
+.bodycontainer .productcontainer .dealscontainer .systemgaget, .bodycontainer .productcontainer .dealscontainer2 .systemgaget, .bodycontainer .productcontainer .recentblogcontainer .systemgaget, .bodycontainer .productcontainer .gridcontainer .systemgaget {
+  margin: 20px 0px 0px;
+}
+.bodycontainer .productcontainer .dealscontainer .systemgaget .gaget, .bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget, .bodycontainer .productcontainer .recentblogcontainer .systemgaget .gaget, .bodycontainer .productcontainer .gridcontainer .systemgaget .gaget {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.bodycontainer .productcontainer .dealscontainer .systemgaget .gaget img, .bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget img, .bodycontainer .productcontainer .recentblogcontainer .systemgaget .gaget img, .bodycontainer .productcontainer .gridcontainer .systemgaget .gaget img {
+  margin: 22px 0px;
+}
+.bodycontainer .productcontainer .dealscontainer .systemgaget .gaget i, .bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget i, .bodycontainer .productcontainer .recentblogcontainer .systemgaget .gaget i, .bodycontainer .productcontainer .gridcontainer .systemgaget .gaget i {
+  font-size: 12px;
+  margin-right: -2px;
+  color: #ebeced;
+  margin-bottom: 10px;
+}
+.bodycontainer .productcontainer .dealscontainer .systemgaget .gaget i.rating, .bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget i.rating, .bodycontainer .productcontainer .recentblogcontainer .systemgaget .gaget i.rating, .bodycontainer .productcontainer .gridcontainer .systemgaget .gaget i.rating {
+  color: #fcae03;
+}
+.bodycontainer .productcontainer .dealscontainer .systemgaget .gaget h4, .bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget h4, .bodycontainer .productcontainer .recentblogcontainer .systemgaget .gaget h4, .bodycontainer .productcontainer .gridcontainer .systemgaget .gaget h4 {
+  font-size: 16px;
+  display: inline;
+  font-weight: bold;
+}
+.bodycontainer .productcontainer .dealscontainer .systemgaget .gaget p, .bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget p, .bodycontainer .productcontainer .recentblogcontainer .systemgaget .gaget p, .bodycontainer .productcontainer .gridcontainer .systemgaget .gaget p {
+  color: #a3abb2;
+  display: inline;
+  margin-left: 10px;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.bodycontainer .productcontainer .dealscontainer .systemgaget .gaget .red, .bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget .red, .bodycontainer .productcontainer .recentblogcontainer .systemgaget .gaget .red, .bodycontainer .productcontainer .gridcontainer .systemgaget .gaget .red {
+  background-color: #ed4041;
+  color: white;
+  font-size: 14px;
+  padding: 0px 8px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.bodycontainer .productcontainer .dealscontainer .systemgaget .gaget .yellow, .bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget .yellow, .bodycontainer .productcontainer .recentblogcontainer .systemgaget .gaget .yellow, .bodycontainer .productcontainer .gridcontainer .systemgaget .gaget .yellow {
+  background-color: #ffe500;
+  color: black;
+  font-size: 14px;
+  padding: 0px 12px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.bodycontainer .productcontainer .midaddcontainer {
+  margin-bottom: 35px;
+}
+.bodycontainer .productcontainer .midaddcontainer .slide {
+  position: relative;
+}
+.bodycontainer .productcontainer .midaddcontainer .slide img {
+  border-radius: 10px;
+}
+.bodycontainer .productcontainer .midaddcontainer .offerdetail {
+  position: absolute;
+  color: white;
+  top: 18px;
+  left: 52px;
+}
+.bodycontainer .productcontainer .midaddcontainer .offerdetail h4 {
+  font-size: 22px;
+}
+.bodycontainer .productcontainer .midaddcontainer .offerdetail p {
+  font-size: 14px;
+}
+.bodycontainer .productcontainer .midaddcontainer .offerdetail button {
+  color: #8ea6ec;
+  border: none;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 4px 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.bodycontainer .productcontainer .midaddcontainer .offerdetail button.greenbutton {
+  color: #3cb7bc;
+}
+.bodycontainer .productcontainer .midaddcontainer .smartphoneoffer {
+  text-align: center;
+  margin-left: 10%;
+}
+.bodycontainer .productcontainer .midaddcontainer .smartphoneoffer .blue {
+  color: #394249;
+}
+.bodycontainer .productcontainer .midaddcontainer .smartphoneoffer p {
+  font-size: 16px;
+}
+.bodycontainer .productcontainer .midaddcontainer .smartphoneoffer h1 {
+  margin-top: 8px;
+}
+.bodycontainer .productcontainer .midaddcontainer .smartphoneoffer span {
+  color: #ffe500;
+}
+.bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget1 {
+  position: relative;
+}
+.bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget1 img {
+  width: 248px;
+  height: 485px;
+  border-radius: 10px;
+}
+.bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget1 .productname {
+  position: absolute;
+  color: white;
+  top: 26px;
+  left: 22px;
+}
+.bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget1 .productname h4 {
+  font-size: 22px;
+  margin: 0px 0px 5px;
+}
+.bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget1 .productname p {
+  font-size: 14px;
+}
+.bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget1 .productname button {
+  color: #ed4041;
+  border: none;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 4px 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget1 .productname button.blue {
+  color: #9e79ea;
+}
+.bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget1 .productname button.green {
+  color: #8fb44d;
+}
+.bodycontainer .productcontainer .dealscontainer2 .secondcol .row {
+  margin-left: 30px;
+}
+.bodycontainer .productcontainer .dealscontainer2 .secondcol .row .col-sm-2 {
+  width: 215px;
+  height: 190px;
+  margin-bottom: 68px;
+}
+.bodycontainer .productcontainer .dealscontainer2 .secondcol .row .col-sm-2 img {
+  margin: 18px 0px 2px;
+}
+.bodycontainer .productcontainer .gridcontainer {
+  margin-bottom: 40px;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid {
+  background-color: white;
+  padding: 18px 18px 20px;
+  margin-top: 18px;
+  border-radius: 10px;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid .gridimg {
+  width: 30%;
+  float: left;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid .gridimg img {
+  width: 100%;
+  display: block;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid .gridcontent {
+  float: left;
+  margin-left: 15px;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid .gridcontent i {
+  font-size: 12px;
+  margin-right: -2px;
+  color: #ebeced;
+  margin: 5px 0px;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid .gridcontent i.rating {
+  color: #fcae03;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid .gridcontent h5 {
+  font-weight: 400;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid .gridcontent h4 {
+  font-weight: bold;
+  font-size: 16px;
+  display: inline;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid .gridcontent p {
+  color: #a3abb2;
+  display: inline;
+  margin-left: 10px;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.bodycontainer .productcontainer .gridcontainer .grid1 .overallgrid .gridcontent .red {
+  background-color: #ed4041;
+  color: white;
+  font-size: 12px;
+  padding: 0px 8px;
+  border-radius: 10px;
+  position: absolute;
+  top: 217px;
+  left: 24px;
+}
+.bodycontainer .productcontainer .recentblogcontainer .row {
+  margin-top: 20px;
+}
+.bodycontainer .productcontainer .photocontainer img {
+  border-radius: 10px;
+  min-height: 205px;
+}
+.bodycontainer .productcontainer .photocontainer .photocontent {
+  padding: 14px;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  font-weight: bold;
+}
+.bodycontainer .productcontainer .photocontainer .photocontent h4 {
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.bodycontainer .productcontainer .photocontainer .photocontent p {
+  font-weight: 100;
+  font-size: 14px;
+  color: #80889d;
+}
+.bodycontainer .productcontainer .photocontainer .photocontent p b {
+  color: black;
+}
+
+.footercontainer {
+  margin: 0px -15px;
+  padding: 70px 15px;
+  background-color: #10181f;
+  color: #f2f5f8;
+}
+.footercontainer .fcon1 img {
+  width: 100%;
+}
+.footercontainer .fcon1 p {
+  margin: 25px 0px;
+  font-size: 14px;
+  color: #a6afb5;
+}
+.footercontainer .fcon1 a {
+  font-size: 14px;
+  display: block;
+  color: #a6afb5;
+  text-decoration: none;
+}
+.footercontainer .fcon2 .headsection {
+  border-bottom: 1px solid #30383f;
+  padding-bottom: 10px;
+}
+.footercontainer .fcon2 .headsection h3 {
+  font-weight: bold;
+  display: inline;
+  font-size: 22px;
+}
+.footercontainer .fcon2 .headsection h3 span {
+  color: #ed4041;
+  position: relative;
+}
+.footercontainer .fcon2 .headsection h3 span::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #ed4041;
+  display: inline-block;
+  position: absolute;
+  top: 36px;
+  left: 0px;
+}
+.footercontainer .fcon2 .fconblog .smallimg, .footercontainer .fcon2 .fconblog .smallimg1 {
+  margin: 20px 0px;
+  font-size: 12px;
+}
+.footercontainer .fcon2 .fconblog .smallimg .imgcontainer, .footercontainer .fcon2 .fconblog .smallimg1 .imgcontainer {
+  float: left;
+}
+.footercontainer .fcon2 .fconblog .smallimg .imgcontainer img, .footercontainer .fcon2 .fconblog .smallimg1 .imgcontainer img {
+  height: 65px;
+  width: 65px;
+  border-radius: 10px;
+}
+.footercontainer .fcon2 .fconblog .smallimg .imgcontent, .footercontainer .fcon2 .fconblog .smallimg1 .imgcontent {
+  float: left;
+  margin-left: 20px;
+}
+.footercontainer .fcon2 .fconblog .smallimg .imgcontent p, .footercontainer .fcon2 .fconblog .smallimg1 .imgcontent p {
+  margin: 0px;
+}
+.footercontainer .fcon2 .fconblog .smallimg .imgcontent span, .footercontainer .fcon2 .fconblog .smallimg1 .imgcontent span {
+  color: #a6afb5;
+}
+.footercontainer .fcon2 .fconblog .smallimg1 {
+  border-top: 1px solid #30383f;
+  padding-top: 20px;
+}
+.footercontainer .fcon2 .fconcatagries .subdiv, .footercontainer .fcon2 .fconaccount .subdiv, .footercontainer .fcon2 .fconinformation .subdiv {
+  margin-top: 30px;
+}
+.footercontainer .fcon2 .fconcatagries .subdiv a, .footercontainer .fcon2 .fconaccount .subdiv a, .footercontainer .fcon2 .fconinformation .subdiv a {
+  display: block;
+  color: #f2f5f8;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.footercontainer .fcon2 .fconcatagries .subdiv a:hover, .footercontainer .fcon2 .fconaccount .subdiv a:hover, .footercontainer .fcon2 .fconinformation .subdiv a:hover {
+  color: #ed4041;
+}
+.footercontainer .fcon2 .fconcatagries .subdiv i, .footercontainer .fcon2 .fconaccount .subdiv i, .footercontainer .fcon2 .fconinformation .subdiv i {
+  color: #f2f5f8;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.footercontainer2 {
+  padding: 30px 15px;
+  background-color: #1a232a;
+  margin: 0px -15px;
+}
+.footercontainer2 .copyrights {
+  display: inline;
+}
+.footercontainer2 .copyrights a {
+  color: #a6afb5;
+  text-decoration: none;
+}
+.footercontainer2 .socialmedia-icon {
+  float: right;
+}
+.footercontainer2 .socialmedia-icon .facebook, .footercontainer2 .socialmedia-icon .twitter, .footercontainer2 .socialmedia-icon .googleplus, .footercontainer2 .socialmedia-icon .linkedin, .footercontainer2 .socialmedia-icon .instagram {
+  background-color: #395498;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding: 7px 0px;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 12px;
+}
+.footercontainer2 .socialmedia-icon .twitter {
+  background-color: #5da9dd;
+}
+.footercontainer2 .socialmedia-icon .googleplus {
+  background-color: #ed4041;
+}
+.footercontainer2 .socialmedia-icon .linkedin {
+  background-color: #29a1d5;
+}
+.footercontainer2 .socialmedia-icon .instagram {
+  background-color: #00afc0;
+}
+
+.homepagecontainer, .productpagecontainer {
+  margin: 0px -15px;
+}
+.homepagecontainer .privacycontainer, .productpagecontainer .privacycontainer {
+  background-color: #ebeef1;
+  padding: 20px 15px;
+  font-weight: bold;
+}
+.homepagecontainer .privacycontainer i, .productpagecontainer .privacycontainer i {
+  font-size: 18px;
+  margin: 0px 15px;
+}
+.homepagecontainer .privacycontainer span, .productpagecontainer .privacycontainer span {
+  color: #a3abb2;
+}
+.homepagecontainer .privacypolicy, .productpagecontainer .privacypolicy {
+  padding: 50px 15px;
+  background-color: #f5f8fb;
+}
+.homepagecontainer .privacypolicy .primarycontainer, .productpagecontainer .privacypolicy .primarycontainer {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+.homepagecontainer .privacypolicy .primarycontainer h3, .productpagecontainer .privacypolicy .primarycontainer h3 {
+  border-bottom: 1px solid #ebeef1;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.homepagecontainer .privacypolicy .primarycontainer h1, .productpagecontainer .privacypolicy .primarycontainer h1 {
+  font-weight: bolder;
+  margin: 30px 0px;
+}
+.homepagecontainer .privacypolicy .primarycontainer p, .productpagecontainer .privacypolicy .primarycontainer p {
+  color: #80889d;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+.homepagecontainer .privacypolicy .headsection, .productpagecontainer .privacypolicy .headsection {
+  border-bottom: 1px solid #a6afb5;
+  padding-bottom: 10px;
+}
+.homepagecontainer .privacypolicy .headsection h3, .productpagecontainer .privacypolicy .headsection h3 {
+  font-weight: bold;
+  display: inline;
+  font-size: 22px;
+}
+.homepagecontainer .privacypolicy .headsection h3 span, .productpagecontainer .privacypolicy .headsection h3 span {
+  color: #ed4041;
+  position: relative;
+}
+.homepagecontainer .privacypolicy .headsection h3 span::after, .productpagecontainer .privacypolicy .headsection h3 span::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #ed4041;
+  display: inline-block;
+  position: absolute;
+  top: 36px;
+  left: 0px;
+}
+.homepagecontainer .privacypolicy .fconblog .smallimg, .productpagecontainer .privacypolicy .fconblog .smallimg {
+  margin: 20px 0px;
+  font-size: 12px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+.homepagecontainer .privacypolicy .fconblog .smallimg .imgcontainer, .productpagecontainer .privacypolicy .fconblog .smallimg .imgcontainer {
+  float: left;
+}
+.homepagecontainer .privacypolicy .fconblog .smallimg .imgcontainer img, .productpagecontainer .privacypolicy .fconblog .smallimg .imgcontainer img {
+  height: 72px;
+  width: 97px;
+  border-radius: 10px;
+}
+.homepagecontainer .privacypolicy .fconblog .smallimg .imgcontent, .productpagecontainer .privacypolicy .fconblog .smallimg .imgcontent {
+  float: left;
+  margin-left: 20px;
+  font-weight: bold;
+  line-height: 18px;
+}
+.homepagecontainer .privacypolicy .fconblog .smallimg .imgcontent p, .productpagecontainer .privacypolicy .fconblog .smallimg .imgcontent p {
+  margin: 0px;
+}
+.homepagecontainer .privacypolicy .fconblog .smallimg .imgcontent span, .productpagecontainer .privacypolicy .fconblog .smallimg .imgcontent span {
+  color: #a6afb5;
+}
+.homepagecontainer .privacypolicy .fconblog .smallimg .imgcontent h6, .productpagecontainer .privacypolicy .fconblog .smallimg .imgcontent h6 {
+  display: inline;
+  font-weight: bold;
+}
+
+.productpagecontainer .primarycontainer {
+  height: 470px;
+}
+.productpagecontainer .primarycontainer .arrow {
+  text-align: center;
+}
+.productpagecontainer .primarycontainer .arrow i {
+  display: block;
+  font-size: 50px;
+  color: #a3abb2;
+  margin: -12px 0px;
+}
+.productpagecontainer .primarycontainer .imgslide .borderimage {
+  height: 70px;
+  width: 70px;
+  border: 1px solid #ebeef1;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+.productpagecontainer .primarycontainer .imgslide .borderimage img {
+  width: 100%;
+}
+.productpagecontainer .primarycontainer .imgslide .borderimage.active {
+  border: 1px solid #ed4041;
+}
+.productpagecontainer .primarycontainer .bigimage {
+  border: 1px solid #ebeef1;
+  height: 380px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.productpagecontainer .primarycontainer .bigimage img {
+  width: 100%;
+  margin-top: -42px;
+  display: none;
+}
+.productpagecontainer .primarycontainer .bigimage img.active {
+  display: block;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1, .productpagecontainer .primarycontainer .bigimagecontent .content2, .productpagecontainer .primarycontainer .bigimagecontent .content3, .productpagecontainer .primarycontainer .bigimagecontent .content4 {
+  display: none;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1 h2, .productpagecontainer .primarycontainer .bigimagecontent .content2 h2, .productpagecontainer .primarycontainer .bigimagecontent .content3 h2, .productpagecontainer .primarycontainer .bigimagecontent .content4 h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1 i, .productpagecontainer .primarycontainer .bigimagecontent .content2 i, .productpagecontainer .primarycontainer .bigimagecontent .content3 i, .productpagecontainer .primarycontainer .bigimagecontent .content4 i {
+  color: #ebeced;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1 i.rating, .productpagecontainer .primarycontainer .bigimagecontent .content2 i.rating, .productpagecontainer .primarycontainer .bigimagecontent .content3 i.rating, .productpagecontainer .primarycontainer .bigimagecontent .content4 i.rating {
+  color: #fcae03;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1 h4, .productpagecontainer .primarycontainer .bigimagecontent .content1 p, .productpagecontainer .primarycontainer .bigimagecontent .content2 h4, .productpagecontainer .primarycontainer .bigimagecontent .content2 p, .productpagecontainer .primarycontainer .bigimagecontent .content3 h4, .productpagecontainer .primarycontainer .bigimagecontent .content3 p, .productpagecontainer .primarycontainer .bigimagecontent .content4 h4, .productpagecontainer .primarycontainer .bigimagecontent .content4 p {
+  display: inline;
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1 p, .productpagecontainer .primarycontainer .bigimagecontent .content2 p, .productpagecontainer .primarycontainer .bigimagecontent .content3 p, .productpagecontainer .primarycontainer .bigimagecontent .content4 p {
+  text-decoration: line-through;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1 .list, .productpagecontainer .primarycontainer .bigimagecontent .content2 .list, .productpagecontainer .primarycontainer .bigimagecontent .content3 .list, .productpagecontainer .primarycontainer .bigimagecontent .content4 .list {
+  margin-top: 20px;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1 .list i, .productpagecontainer .primarycontainer .bigimagecontent .content2 .list i, .productpagecontainer .primarycontainer .bigimagecontent .content3 .list i, .productpagecontainer .primarycontainer .bigimagecontent .content4 .list i {
+  font-weight: bold;
+  color: #a3abb2;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1 .list p, .productpagecontainer .primarycontainer .bigimagecontent .content2 .list p, .productpagecontainer .primarycontainer .bigimagecontent .content3 .list p, .productpagecontainer .primarycontainer .bigimagecontent .content4 .list p {
+  text-decoration: none;
+  font-weight: 100;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.productpagecontainer .primarycontainer .bigimagecontent .content1.active, .productpagecontainer .primarycontainer .bigimagecontent .content2.active, .productpagecontainer .primarycontainer .bigimagecontent .content3.active, .productpagecontainer .primarycontainer .bigimagecontent .content4.active {
+  display: block;
+}
+.productpagecontainer .accordiancontainer {
+  padding: 30px;
+  background-color: white;
+  margin-top: 35px;
+  border-radius: 15px;
+}
+.productpagecontainer .accordiancontainer .accmenu {
+  border-bottom: 2px solid #ebeef1;
+  padding-bottom: 15px;
+}
+.productpagecontainer .accordiancontainer .accmenu a {
+  text-decoration: none;
+  color: black;
+}
+.productpagecontainer .accordiancontainer .accmenu a p {
+  display: inline;
+  margin-right: 10px;
+  font-size: 28px;
+  margin-right: 30px;
+}
+.productpagecontainer .accordiancontainer .accmenu a p.active {
+  border-bottom: 3px solid #ed4041;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+.productpagecontainer .accordiancontainer .cont .contents1, .productpagecontainer .accordiancontainer .cont .contents2, .productpagecontainer .accordiancontainer .cont .contents3 {
+  display: none;
+}
+.productpagecontainer .accordiancontainer .cont .contents1 p, .productpagecontainer .accordiancontainer .cont .contents1 ul, .productpagecontainer .accordiancontainer .cont .contents2 p, .productpagecontainer .accordiancontainer .cont .contents2 ul, .productpagecontainer .accordiancontainer .cont .contents3 p, .productpagecontainer .accordiancontainer .cont .contents3 ul {
+  line-height: 40px;
+  color: #80889d;
+  margin: 40px 0px;
+}
+.productpagecontainer .accordiancontainer .cont .contents1 span, .productpagecontainer .accordiancontainer .cont .contents2 span, .productpagecontainer .accordiancontainer .cont .contents3 span {
+  color: black;
+}
+.productpagecontainer .accordiancontainer .cont .contents1 img, .productpagecontainer .accordiancontainer .cont .contents2 img, .productpagecontainer .accordiancontainer .cont .contents3 img {
+  margin-left: 20%;
+}
+.productpagecontainer .accordiancontainer .cont .contents1.active, .productpagecontainer .accordiancontainer .cont .contents2.active, .productpagecontainer .accordiancontainer .cont .contents3.active {
+  display: block;
+}
+.productpagecontainer .accordiancontainer .cont .contents1 ul, .productpagecontainer .accordiancontainer .cont .contents2 ul, .productpagecontainer .accordiancontainer .cont .contents3 ul {
+  margin-top: -40px;
+}
+.productpagecontainer .dealscontainer {
+  padding: 10px 15px 50px;
+  background-color: #f5f8fb;
+}
+.productpagecontainer .dealscontainer .headsection {
+  border-bottom: 1px solid #ebeef1;
+  padding-bottom: 20px;
+}
+.productpagecontainer .dealscontainer .headsection h3 {
+  font-weight: bold;
+  display: inline;
+}
+.productpagecontainer .dealscontainer .headsection h3 span {
+  color: #ed4041;
+  position: relative;
+}
+.productpagecontainer .dealscontainer .headsection h3 span::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #ed4041;
+  display: inline-block;
+  position: absolute;
+  top: 48px;
+  left: 0px;
+}
+.productpagecontainer .dealscontainer .systemgaget {
+  margin-top: 20px;
+}
+.productpagecontainer .dealscontainer .systemgaget .gaget {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.productpagecontainer .dealscontainer .systemgaget .gaget img {
+  margin: 22px 0px;
+}
+.productpagecontainer .dealscontainer .systemgaget .gaget .toptext {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 12px;
+}
+.productpagecontainer .dealscontainer .systemgaget .gaget i {
+  font-size: 12px;
+  margin-right: -2px;
+  color: #ebeced;
+  margin-bottom: 10px;
+}
+.productpagecontainer .dealscontainer .systemgaget .gaget i.rating {
+  color: #fcae03;
+}
+.productpagecontainer .dealscontainer .systemgaget .gaget h4 {
+  font-size: 16px;
+  display: inline;
+  font-weight: bold;
+}
+.productpagecontainer .dealscontainer .systemgaget .gaget p {
+  color: #a3abb2;
+  display: inline;
+  margin-left: 10px;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.productpagecontainer .dealscontainer .systemgaget .gaget .red {
+  background-color: #ed4041;
+  color: white;
+  font-size: 14px;
+  padding: 0px 8px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.productpagecontainer .dealscontainer .systemgaget .gaget .yellow {
+  background-color: #ffe500;
+  color: black;
+  font-size: 14px;
+  padding: 0px 12px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.productpagecontainer .productcategories .productcategoriessub {
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px 0px 50px;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv {
+  margin-top: 10px;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: black;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv i {
+  margin-right: 12px;
+  font-size: 20px;
+  color: #80889d;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv span {
+  font-size: 14px;
+  color: #80889d;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv button {
+  color: white;
+  background-color: #ed4041;
+  font-weight: bold;
+  border: none;
+  padding: 2px 15px;
+  border-radius: 10px;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv p {
+  display: inline;
+  color: #80889d;
+  font-size: 14px;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv input {
+  margin-bottom: 10px;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv .starrating i {
+  font-size: 16px;
+  margin-right: -2px;
+  color: #ebeced;
+  margin: 5px 0px;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv .starrating i.rating {
+  color: #fcae03;
+}
+.productpagecontainer .productcategories .productcategoriessub .subdiv span {
+  color: black;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.productpagecontainer .shop .productlist {
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px 0px 0px;
+}
+.productpagecontainer .shop .productlist i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: #a3abb2;
+}
+.productpagecontainer .shop .productlist i.active {
+  color: black;
+}
+.productpagecontainer .shop .productlist span {
+  color: #a3abb2;
+  font-size: 18px;
+}
+.productpagecontainer .dropdown {
+  display: inline;
+  float: right;
+  background-color: white;
+}
+.productpagecontainer .dropdown .custom-show {
+  background-color: white;
+  color: #80889d;
+  border: 2px solid #ebeef1;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.productpagecontainer .gridviewcontainer, .productpagecontainer .listedviewcontainer {
+  padding: 20px 20px;
+  background-color: #f5f8fb;
+  border-radius: 15px;
+  margin: 20px 0px 10px;
+  display: none;
+}
+.productpagecontainer .gridviewcontainer .systemgaget, .productpagecontainer .listedviewcontainer .systemgaget {
+  margin-top: 20px;
+}
+.productpagecontainer .gridviewcontainer .systemgaget .gaget, .productpagecontainer .listedviewcontainer .systemgaget .gaget {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.productpagecontainer .gridviewcontainer .systemgaget .gaget .imagecenter, .productpagecontainer .listedviewcontainer .systemgaget .gaget .imagecenter {
+  text-align: center;
+}
+.productpagecontainer .gridviewcontainer .systemgaget .gaget img, .productpagecontainer .listedviewcontainer .systemgaget .gaget img {
+  margin: 22px 0px;
+}
+.productpagecontainer .gridviewcontainer .systemgaget .gaget i, .productpagecontainer .listedviewcontainer .systemgaget .gaget i {
+  font-size: 12px;
+  margin-right: -2px;
+  color: #ebeced;
+  margin-bottom: 10px;
+}
+.productpagecontainer .gridviewcontainer .systemgaget .gaget i.rating, .productpagecontainer .listedviewcontainer .systemgaget .gaget i.rating {
+  color: #fcae03;
+}
+.productpagecontainer .gridviewcontainer .systemgaget .gaget h4, .productpagecontainer .listedviewcontainer .systemgaget .gaget h4 {
+  font-size: 16px;
+  display: inline;
+  font-weight: bold;
+}
+.productpagecontainer .gridviewcontainer .systemgaget .gaget p, .productpagecontainer .listedviewcontainer .systemgaget .gaget p {
+  color: #a3abb2;
+  display: inline;
+  margin-left: 10px;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.productpagecontainer .gridviewcontainer .systemgaget .gaget .red, .productpagecontainer .listedviewcontainer .systemgaget .gaget .red {
+  background-color: #ed4041;
+  color: white;
+  font-size: 14px;
+  padding: 0px 8px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.productpagecontainer .gridviewcontainer .systemgaget .gaget .yellow, .productpagecontainer .listedviewcontainer .systemgaget .gaget .yellow {
+  background-color: #ffe500;
+  color: black;
+  font-size: 14px;
+  padding: 0px 12px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.productpagecontainer .gridviewcontainer.showthegrid, .productpagecontainer .listedviewcontainer.showthegrid {
+  display: block;
+}
+.productpagecontainer .listedviewcontainer {
+  display: none;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .gaget {
+  text-align: left;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listimage {
+  display: inline;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listviewcontext {
+  margin-top: 60px;
+  top: 25px;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listviewcontext h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listviewcontext i {
+  font-size: 20px;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listviewcontext h4, .productpagecontainer .listedviewcontainer .systemgaget .listviewcontext p {
+  font-size: 20px;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listviewcontext .bottombuttons button {
+  display: inline;
+  background-color: #ed4041;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 3px 10px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listviewcontext .bottombuttons i {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #a3abb2;
+  border: 1px solid #ebeef1;
+  padding: 6px 6px;
+  border-radius: 10px;
+  min-width: 32px;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listviewcontext .bottombuttons i:hover, .productpagecontainer .listedviewcontainer .systemgaget .listviewcontext .bottombuttons i.active {
+  background-color: #ed4041;
+  color: white;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listviewcontext .red {
+  top: 4%;
+  left: -46%;
+}
+.productpagecontainer .listedviewcontainer .systemgaget .listviewcontext .yellow {
+  top: 4%;
+  right: 4%;
+}
+.productpagecontainer .listedviewcontainer.showthegrid {
+  display: block;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .headercontainer img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .headercontainer .searchcontainer {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .headercontainer .searchcontainer .dropdown {
+    display: none;
+  }
+  .headercontainer .iconcontainer {
+    margin: 20px 0px;
+    float: left;
+  }
+  .headercontainer2 .menucontainer {
+    margin-left: 0px;
+  }
+  .headercontainer2 .menucontainer .custom-dropdown .buttondrop {
+    display: block;
+  }
+  .headercontainer2 .menucontainer .custom-dropdown .dropdown-menu {
+    margin-top: 0px;
+  }
+  .headercontainer2 .socialmedia-icon {
+    float: left;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .item1 {
+    background: url("../images/homepage_1_slider_1_item_1_background.jpg") no-repeat 0px 0px/100% #ed4041;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .item1 .carousel-caption {
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    top: 100px;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .item1 .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .item2 {
+    background: url(../images/homepage_1_slider_1_item_2_background.jpg) no-repeat 0px 0px/100% #7e4fb7;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .item2 img {
+    width: 50%;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .item2 .carousel-caption {
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    top: 100px;
+  }
+  .bodycontainer .bannercontainer .custom-carousel .carousel-inner .item2 .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .bodycontainer .productcontainer .featurecontainer {
+    margin-bottom: 20px;
+  }
+  .bodycontainer .productcontainer .featurecontainer .content {
+    margin-bottom: 20px;
+  }
+  .bodycontainer .productcontainer .gagetcontainer .slide img {
+    margin-bottom: 20px;
+  }
+  .bodycontainer .productcontainer .dealscontainer .systemgaget .gaget {
+    margin-bottom: 20px;
+  }
+  .bodycontainer .productcontainer .dealscontainer .middlemenucontainer {
+    margin-top: 30px;
+  }
+  .bodycontainer .productcontainer .midaddcontainer {
+    display: none;
+  }
+  .bodycontainer .productcontainer .midaddcontainer .slide img {
+    margin-bottom: 20px;
+  }
+  .bodycontainer .productcontainer .midaddcontainer .offerdetail {
+    top: 0px;
+  }
+  .bodycontainer .productcontainer .dealscontainer2 .systemgaget .gaget1 img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .bodycontainer .productcontainer .dealscontainer2 .secondcol .row {
+    margin-left: 0px;
+  }
+  .bodycontainer .productcontainer .dealscontainer2 .secondcol .row .col-sm-2 {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .bodycontainer .productcontainer .midaddcontainer {
+    height: 220px;
+  }
+  .bodycontainer .productcontainer .midaddcontainer .smartphoneoffer {
+    margin-left: 0%;
+  }
+  .bodycontainer .productcontainer .midaddcontainer .smartphoneoffer h1 {
+    font-size: 20px;
+    color: black;
+  }
+  .bodycontainer .productcontainer .midaddcontainer .smartphoneoffer p {
+    color: black;
+    font-size: 18px;
+  }
+  .bodycontainer .productcontainer .midaddcontainer .offerdetail {
+    left: 0%;
+    top: 100%;
+    height: 200px;
+  }
+  .bodycontainer .productcontainer .grid1 {
+    margin-top: 30px;
+  }
+  .footercontainer {
+    padding: 40px 15px;
+  }
+  .footercontainer .fcon1 {
+    margin-bottom: 40px;
+  }
+  .footercontainer .fcon2 .fconblog, .footercontainer .fcon2 .fconcatagries, .footercontainer .fcon2 .fconaccount, .footercontainer .fcon2 .fconinformation {
+    margin-bottom: 50px;
+  }
+  .footercontainer2 .socialmedia-icon {
+    float: left;
+    margin-top: 20px;
+  }
+  .productpagecontainer .shop .productlist span {
+    display: none;
+  }
+  .productpagecontainer .shop .productlist .dropdown {
+    display: none;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer {
+    padding: 0px;
+    position: relative;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer .arrow i {
+    display: none;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer .bigimage {
+    width: 225px;
+    position: absolute;
+    top: -318px;
+    right: 14px;
+    height: 185px;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer .bigimage img {
+    margin-top: -18px;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent {
+    position: absolute;
+    top: -135px;
+    right: 14px;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content1 h2, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content2 h2, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content3 h2, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content4 h2 {
+    font-size: 16px;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content1 i, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content2 i, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content3 i, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content4 i {
+    margin-bottom: 0px;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content1 p, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content2 p, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content3 p, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content4 p {
+    font-size: 14px;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content1 h4, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content2 h4, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content3 h4, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content4 h4 {
+    font-size: 16px;
+  }
+  .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content1 .list, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content2 .list, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content3 .list, .productpagecontainer .privacypolicy .primarycontainer .bigimagecontent .content4 .list {
+    margin-top: 4px;
+  }
+  .productpagecontainer .accordiancontainer .accmenu a h2 {
+    font-size: 20px;
+    display: block;
+  }
+  .productpagecontainer .accordiancontainer .cont .contents1 img, .productpagecontainer .accordiancontainer .cont .contents2 img, .productpagecontainer .accordiancontainer .cont .contents3 img {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .productpagecontainer .accordiancontainer .cont .contents1 p, .productpagecontainer .accordiancontainer .cont .contents2 p, .productpagecontainer .accordiancontainer .cont .contents3 p {
+    line-height: 30px;
+  }
+  .productpagecontainer .accordiancontainer .cont .contents1 ul li, .productpagecontainer .accordiancontainer .cont .contents2 ul li, .productpagecontainer .accordiancontainer .cont .contents3 ul li {
+    line-height: 30px;
+  }
+  .productpagecontainer .dealscontainer .systemgaget .gaget {
+    margin-bottom: 20px;
+  }
+  .productpagecontainer .listedviewcontainer .systemgaget .gaget .yellow {
+    display: none;
+  }
+  .productpagecontainer .listedviewcontainer .systemgaget .gaget img {
+    margin: 0px 0px;
+  }
+  .productpagecontainer .listedviewcontainer .systemgaget .listviewcontext {
+    margin-top: 0px;
+    padding: 20px;
+  }
+  .productpagecontainer .listedviewcontainer .systemgaget .listviewcontext .bottombuttons button {
+    margin-top: 35px;
+  }
+  .homepagecontainer .privacypolicy .primarycontainer {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .homepagecontainer .privacypolicy .primarycontainer h1 {
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+  .homepagecontainer .privacypolicy .primarycontainer h3 {
+    font-size: 25px;
+  }
+  .homepagecontainer .privacypolicy .primarycontainer p {
+    line-height: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */

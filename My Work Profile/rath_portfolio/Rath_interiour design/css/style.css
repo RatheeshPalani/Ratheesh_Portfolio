@@ -1,0 +1,608 @@
+@font-face {
+  font-family: "Poppins-regular";
+  src: url("../fonts/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("../fonts/Poppins-Bold.eot");
+  src: url("../fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.ttf") format("truetype"), url("../fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-size: 16px;
+  font-family: "Poppins-regular";
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Poppins-bold";
+}
+
+.headercontainer {
+  background: url("../images/home-bg.jpg") no-repeat 0px 0px/100%;
+  height: 700px;
+  margin: 0px -15px;
+}
+.headercontainer .opacity {
+  height: 700px;
+  background-color: rgba(71, 48, 39, 0.9);
+}
+.headercontainer .opacity .custom-navbar {
+  border-radius: 0px;
+  background-color: transparent;
+  padding: 20px 0px;
+  border-color: transparent;
+}
+.headercontainer .opacity .custom-navbar .navbar-collapse {
+  padding-top: 16px;
+}
+.headercontainer .opacity .custom-navbar .navbar-collapse .navbar-nav li a {
+  color: white;
+  font-weight: bold;
+  margin-left: 40px;
+  transition: 1s;
+}
+.headercontainer .opacity .custom-navbar .navbar-collapse .navbar-nav li a:hover {
+  color: #8c3b1d;
+  transition: 1s;
+}
+.headercontainer .content {
+  text-align: center;
+  color: white;
+  margin-top: 110px;
+}
+.headercontainer .content h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+.headercontainer .content h3 {
+  font-size: 38px;
+}
+.headercontainer .content p {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.bodycontainer {
+  margin: 0px -15px;
+  box-shadow: 0px 30px 25px #f3f5f8;
+}
+.bodycontainer .imagecontainer {
+  padding: 90px 0px;
+  text-align: center;
+}
+.bodycontainer .imagecontainer span {
+  border-bottom: 1px dashed #8c3b1d;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.bodycontainer .imagecontainer h1 {
+  font-weight: bold;
+}
+.bodycontainer .imagecontainer .imagesub {
+  margin: 105px 0px;
+}
+.bodycontainer .imagecontainer .imagesub img {
+  width: 80%;
+  transition: 1s;
+  border-radius: 5px;
+  filter: grayscale(100%);
+}
+.bodycontainer .imagecontainer .imagesub img:hover {
+  transform: scale(1.4);
+  transition: 1s;
+  border-radius: 5px;
+  filter: none;
+}
+.bodycontainer .imagecontainer .aboutcontainer h1 {
+  text-align: left;
+}
+.bodycontainer .imagecontainer .aboutcontainer span {
+  text-align: left;
+  display: block;
+  width: 170px;
+}
+.bodycontainer .imagecontainer .aboutcontainer .colorcontainer {
+  padding-top: 25px;
+}
+.bodycontainer .imagecontainer .aboutcontainer .colorcontainer .colorsub {
+  padding: 20px 0px;
+  display: inline-block;
+  width: 244px;
+  margin: 0px 30px 15px 0px;
+  font-weight: bold;
+  box-shadow: 4px 4px 10px #f3f5f8;
+  border: 1px solid #f3f5f8;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 30px;
+}
+.bodycontainer .imagecontainer .aboutcontainer .colorcontainer .colorsub i {
+  position: relative;
+  left: -12px;
+  top: 2px;
+  font-size: 32px;
+}
+.bodycontainer .imagecontainer .aboutcontainer .colorcontainer .colorsub .pink {
+  color: #ffb3b3;
+}
+.bodycontainer .imagecontainer .aboutcontainer .colorcontainer .colorsub .blue {
+  color: #c6e1ff;
+}
+.bodycontainer .imagecontainer .aboutcontainer .colorcontainer .colorsub .cream {
+  color: #ddc5bc;
+}
+.bodycontainer .imagecontainer .aboutcontainer .colorcontainer .colorsub .sandal {
+  color: #ffe6b3;
+}
+.bodycontainer .imagecontainer .aboutcontainer .colorcontainer .colorsub .green {
+  color: #d4f1b3;
+}
+.bodycontainer .imagecontainer .aboutcontainer p {
+  text-align: left;
+}
+.bodycontainer .imagecontainer .aboutcontainer .button {
+  text-align: left;
+  margin-top: 20px;
+}
+.bodycontainer .imagecontainer .aboutcontainer .button button {
+  border: none;
+  box-shadow: none;
+}
+.bodycontainer .bestcontainer, .bodycontainer .analyticscontainer {
+  background-color: #b4ab80;
+  padding: 88px 0px;
+  text-align: center;
+}
+.bodycontainer .bestcontainer .detailcontainer, .bodycontainer .analyticscontainer .detailcontainer {
+  text-align: left;
+}
+.bodycontainer .bestcontainer .detailcontainer span, .bodycontainer .analyticscontainer .detailcontainer span {
+  border-bottom: 1px dashed #8c3b1d;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.bodycontainer .bestcontainer .detailcontainer h1, .bodycontainer .analyticscontainer .detailcontainer h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.bodycontainer .bestcontainer .detailcontainer ul, .bodycontainer .analyticscontainer .detailcontainer ul {
+  list-style: none;
+  margin-left: -25px;
+}
+.bodycontainer .bestcontainer .detailcontainer ul li, .bodycontainer .analyticscontainer .detailcontainer ul li {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 30px 0px;
+}
+.bodycontainer .bestcontainer .detailcontainer ul li div, .bodycontainer .analyticscontainer .detailcontainer ul li div {
+  width: 20px;
+  height: 20px;
+  background-color: #8c3b1d;
+  color: #b4ab80;
+  text-align: center;
+  border-radius: 22px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.bodycontainer .bestcontainer .detailcontainer button, .bodycontainer .analyticscontainer .detailcontainer button {
+  background-color: #8c3b1d;
+  color: white;
+  padding: 15px 42px;
+  border: none;
+  border-radius: 0px;
+  font-weight: bold;
+  transition: 1s;
+}
+.bodycontainer .bestcontainer .detailcontainer button:hover, .bodycontainer .analyticscontainer .detailcontainer button:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: #b4ab80;
+  transition: 1s;
+}
+.bodycontainer .analyticscontainer {
+  background-color: white;
+}
+.bodycontainer .analyticscontainer .detailcontainer ul li div {
+  color: white;
+}
+.bodycontainer .iconcontainer {
+  padding: 88px 0px;
+  background-color: #b4ab80;
+  text-align: center;
+  color: white;
+}
+.bodycontainer .iconcontainer i {
+  font-size: 80px;
+}
+.bodycontainer .iconcontainer h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.bodycontainer .iconcontainer p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.bodycontainer .clientcontianer {
+  padding: 88px 0px 130px 0px;
+  text-align: center;
+}
+.bodycontainer .clientcontianer span {
+  border-bottom: 1px dashed #8c3b1d;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.bodycontainer .clientcontianer h1 {
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+.bodycontainer .clientcontianer .profilecontainer {
+  border: 1px solid #e8e8e8;
+  width: 440px;
+  padding: 30px 20px 40px 20px;
+  box-shadow: 4px 4px 30px #f3f5f8;
+  margin-left: 70px;
+  border-radius: 5px;
+}
+.bodycontainer .clientcontianer .profilecontainer img {
+  border-radius: 50px;
+  transition: 1s;
+}
+.bodycontainer .clientcontianer .profilecontainer img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+.bodycontainer .clientcontianer .profilecontainer h5 {
+  font-weight: bold;
+  line-height: 0px;
+  margin-top: 30px;
+}
+.bodycontainer .clientcontianer .profilecontainer span {
+  border: none;
+  font-weight: lighter;
+  font-size: 12px;
+  text-transform: capitalize;
+  display: block;
+}
+.bodycontainer .clientcontianer .profilecontainer i {
+  color: #fdae04;
+  font-size: 12px;
+}
+.bodycontainer .clientcontianer .profilecontainer p {
+  line-height: 32px;
+}
+.bodycontainer .faqcontainer {
+  background-color: #f3f5f8;
+  padding: 88px 0px 78px 0px;
+  text-align: center;
+}
+.bodycontainer .faqcontainer span {
+  border-bottom: 1px dashed #8c3b1d;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.bodycontainer .faqcontainer h1 {
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+.bodycontainer .faqcontainer .custom-panel .panel-default {
+  margin-bottom: 20px;
+  border: none;
+  position: relative;
+}
+.bodycontainer .faqcontainer .custom-panel .panel-default .panel-heading {
+  background-color: white;
+  text-align: left;
+  padding: 15px;
+  box-shadow: 4px 4px 30px #f3f5f8;
+}
+.bodycontainer .faqcontainer .custom-panel .panel-default .panel-heading a {
+  text-decoration: none;
+}
+.bodycontainer .faqcontainer .custom-panel .panel-default .panel-heading a i {
+  position: absolute;
+  right: 30px;
+  font-size: 15px;
+}
+.bodycontainer .faqcontainer .custom-panel .panel-default .panel-body {
+  text-align: left;
+}
+.bodycontainer .appcontainer {
+  padding: 75px 0px;
+  text-align: center;
+}
+.bodycontainer .appcontainer span {
+  border-bottom: 1px dashed #8c3b1d;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.bodycontainer .appcontainer h1 {
+  font-weight: bold;
+}
+.bodycontainer .appcontainer i {
+  font-size: 40px;
+  color: #8c3b1d;
+  margin: 35px 25px;
+}
+.bodycontainer .appcontainer p {
+  margin-bottom: 100px;
+}
+.bodycontainer .imgsub {
+  border: 1px solid #e8e8e8;
+  box-shadow: 4px 4px 30px #f3f5f8;
+  margin-top: 70px;
+}
+.bodycontainer .imgsub i {
+  font-size: 18px;
+}
+.bodycontainer .imgsub img {
+  width: 100%;
+}
+.bodycontainer .imgsub h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.bodycontainer .imgsub p {
+  color: #8c3b1d;
+  margin-bottom: 20px;
+}
+.bodycontainer .downloadcontainer {
+  background-color: #b4ab80;
+  text-align: center;
+  padding: 100px 0px;
+  color: white;
+}
+.bodycontainer .downloadcontainer .container {
+  width: 700px;
+}
+.bodycontainer .downloadcontainer h1 {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.bodycontainer .downloadcontainer .soft1, .bodycontainer .downloadcontainer .soft2, .bodycontainer .downloadcontainer .soft3 {
+  text-align: left;
+}
+.bodycontainer .downloadcontainer .soft1 i, .bodycontainer .downloadcontainer .soft2 i, .bodycontainer .downloadcontainer .soft3 i {
+  position: absolute;
+  left: 0px;
+  font-size: 45px;
+}
+.bodycontainer .downloadcontainer .soft1 .content, .bodycontainer .downloadcontainer .soft2 .content, .bodycontainer .downloadcontainer .soft3 .content {
+  padding-left: 42px;
+}
+.bodycontainer .downloadcontainer .soft1 .content p, .bodycontainer .downloadcontainer .soft2 .content p, .bodycontainer .downloadcontainer .soft3 .content p {
+  margin-bottom: 0px;
+  position: relative;
+}
+.bodycontainer .downloadcontainer .soft1 .content h3, .bodycontainer .downloadcontainer .soft2 .content h3, .bodycontainer .downloadcontainer .soft3 .content h3 {
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.bodycontainer .downloadcontainer .soft3 {
+  padding-left: 32px;
+}
+.bodycontainer .downloadcontainer .soft3 i {
+  left: 40px;
+}
+.bodycontainer .contactuscontainer {
+  padding: 85px 0px;
+}
+.bodycontainer .contactuscontainer .ico {
+  position: absolute;
+  left: 0px;
+  background-color: red;
+  width: 78px;
+  height: 78px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.bodycontainer .contactuscontainer .cont {
+  position: relative;
+  padding-left: 100px;
+}
+.bodycontainer .contactuscontainer .cont p {
+  margin-bottom: 15px;
+}
+.bodycontainer .contactuscontainer .cont a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.bodycontainer .contactuscontainer .green {
+  background-color: #70d000;
+}
+.bodycontainer .contactuscontainer .orange {
+  background-color: #ffaa00;
+}
+
+.footercontainer {
+  padding: 68px 0px 28px 0px;
+}
+.footercontainer .fcon1 img {
+  margin-bottom: 25px;
+}
+.footercontainer .fcon1 p {
+  line-height: 30px;
+}
+.footercontainer .fcon1 i {
+  color: #8c3b1d;
+  margin-right: 5px;
+}
+.footercontainer .fcon2 h3, .footercontainer .fcon3 h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footercontainer .fcon2 a, .footercontainer .fcon3 a {
+  text-decoration: none;
+  color: black;
+}
+.footercontainer .fcon2 a:hover, .footercontainer .fcon3 a:hover {
+  color: #8c3b1d;
+}
+.footercontainer .fcon4 {
+  border: 1px dashed #bcbcbc;
+  background-color: #f3f5f8;
+  padding: 20px 20px 20px 20px;
+}
+.footercontainer .fcon4 h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footercontainer .fcon4 p a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.footercontainer .fcon4 p a:hover {
+  color: #8c3b1d;
+}
+
+.footercontainer2 {
+  background-color: #f3f5f8;
+  padding: 30px 0px;
+  text-align: center;
+  margin: 0px -15px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .headercontainer {
+    background: url("../images/home-bg.jpg") no-repeat 0px 100px/100% #8c3b1d;
+    height: 550px;
+  }
+  .headercontainer .opacity {
+    background: none;
+  }
+  .headercontainer .opacity .custom-navbar .navbar-collapse {
+    background-color: #8c3b1d;
+  }
+  .headercontainer .custom-navbar .navbar-toggle:focus, .headercontainer .custom-navbar .navbar-inverse .navbar-toggle:hover {
+    margin-top: 25px;
+  }
+  .headercontainer .content {
+    margin-top: 200px;
+  }
+  .headercontainer .content h1 {
+    font-size: 30px;
+  }
+  .headercontainer .content h3 {
+    font-size: 25px;
+  }
+  .headercontainer .content p {
+    font-size: 20px;
+  }
+  .bodycontainer .imagecontainer {
+    padding: 20px 0px;
+  }
+  .bodycontainer .imagecontainer .imagesub {
+    margin: 40px 0px;
+  }
+  .bodycontainer .imagecontainer .imagesub img:hover {
+    transform: scale(1.2);
+  }
+  .bodycontainer .aboutcontainer h1 {
+    font-size: 25px;
+  }
+  .bodycontainer .aboutcontainer img {
+    width: 100%;
+  }
+  .bodycontainer .aboutcontainer .button button {
+    width: 150px;
+  }
+  .bodycontainer .bestcontainer {
+    padding: 30px 0px;
+  }
+  .bodycontainer .bestcontainer img {
+    width: 100%;
+  }
+  .bodycontainer .bestcontainer .detailcontainer h1 {
+    font-size: 30px;
+  }
+  .bodycontainer .analyticscontainer {
+    padding: 30px 0px;
+  }
+  .bodycontainer .analyticscontainer img {
+    width: 100%;
+  }
+  .bodycontainer .analyticscontainer h1 {
+    font-size: 30px;
+  }
+  .bodycontainer .iconcontainer {
+    padding: 30px 0px;
+  }
+  .bodycontainer .clientcontianer {
+    padding: 30px 0px;
+  }
+  .bodycontainer .clientcontianer h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .bodycontainer .clientcontianer .profilecontainer {
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+  }
+  .bodycontainer .faqcontainer .custom-panel .panel-default .panel-heading a i {
+    right: 8px;
+  }
+  .bodycontainer .appcontainer h1 {
+    font-size: 30px;
+  }
+  .bodycontainer .appcontainer i {
+    font-size: 32px;
+    margin: 30px 20px;
+  }
+  .bodycontainer .appcontainer p {
+    margin-bottom: 30px;
+  }
+  .bodycontainer .appcontainer .imgsub {
+    margin-top: 30px;
+  }
+  .bodycontainer .downloadcontainer {
+    padding: 30px 0px;
+  }
+  .bodycontainer .downloadcontainer .container {
+    width: 100%;
+  }
+  .bodycontainer .downloadcontainer .container .soft1, .bodycontainer .downloadcontainer .container .soft2, .bodycontainer .downloadcontainer .container .soft3 {
+    text-align: center;
+  }
+  .bodycontainer .downloadcontainer .container .soft1 i, .bodycontainer .downloadcontainer .container .soft2 i, .bodycontainer .downloadcontainer .container .soft3 i {
+    left: 77px;
+  }
+  .bodycontainer .downloadcontainer .container .soft1 .content, .bodycontainer .downloadcontainer .container .soft2 .content, .bodycontainer .downloadcontainer .container .soft3 .content {
+    text-align: left;
+    padding-left: 140px;
+    margin-bottom: 40px;
+  }
+  .bodycontainer .downloadcontainer .container .soft3 {
+    padding-left: 0px;
+  }
+  .bodycontainer .contactuscontainer {
+    padding: 50px 0px;
+  }
+  .bodycontainer .contactuscontainer .ico {
+    left: 22px;
+  }
+  .bodycontainer .contactuscontainer .cont {
+    margin-bottom: 30px;
+  }
+  .footercontainer .fcon1, .footercontainer .fcon2, .footercontainer .fcon3, .footercontainer .fcon4 {
+    margin: 40px 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
