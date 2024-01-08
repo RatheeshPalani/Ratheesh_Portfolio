@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productlistviewpage</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+    <button class="scroll-top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <div class="container-fluid">
+        <div class="headercontainer">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="searchcontainer">
+                <div class="dropdown custom-dropdown">
+                    <button class="buttondrop dropdown-toggle" type="button" data-toggle="dropdown">All Categories
+                    <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Appliances</a></li>
+                      <li><a href="#">Books</a></li>
+                      <li><a href="#">Clothing</a></li>
+                      <li><a href="#">Electronics</a></li>
+                      <li><a href="#">Furnitures</a></li>
+                      <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <input type="search" placeholder="Search..." name="" id="" class="productsearch" value="">
+                <i class="fa fa-search searchicon" aria-hidden="true"></i>
+            </div>
+            <div class="iconcontainer">
+                <a href="javascript:;">
+                    <div class="ico">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <p>My Account</p>
+                </a>
+                <a href="javascript:;">
+                    <div class="ico">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <span>0</span>
+                    </div>
+                    <p>My Wishlist</p>
+                </a>
+                <a href="javascript:;">
+                    <div class="ico">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        <span>0</span>
+                    </div>
+                    <p>My Cart</p>
+                </a>
+            </div>
+        </div>
+        <div class="headercontainer2">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="dropdown custommenu-button">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><i class="fa fa-bars" aria-hidden="true"></i><span>All Categories</span>
+                        <i class="fa fa-angle-down angledown" aria-hidden="true"></i></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Audio & Headphones</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="camerasub" ><a role="menuitem" tabindex="-1" href="#" class="dropbtn">Camera & Accessories <span>Hot</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <div class="dropdown-content custom-secondary">
+                                    <a href="#">Lens</a>
+                                    <a href="#">Body Kit</a>
+                                    <a href="#">Tripod</a>
+                                </div>
+                            </a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Console & Games</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="desktop"><a role="menuitem" tabindex="-1" href="#" class="dropbtn">Desktop & Laptop<i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <div class="dropdown-content custom-secondary2">
+                                    <a href="#">Monitor</a>
+                                    <a href="#">Laptops</a>
+                                    <a href="#">Keyboard</a>
+                                </div>
+                            </a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Digital & Electronics<span>Featured</span></a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Digital watch</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation " class="hardware"><a role="menuitem" tabindex="-1" href="#">Hardware & Computer<i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <div class="dropdown-content custom-secondary3">
+                                    <a href="#">Monitor</a>
+                                    <a href="#">Laptops</a>
+                                    <a href="#">Keyboard</a>
+                                </div>
+                            </a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Memory & Flash</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Monitor & TV<span>Sale</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="menucontainer">
+                        <div class="dropdown custom-dropdown ">
+                            <button class="buttondrop dropdown-toggle active" type="button" data-toggle="dropdown">Homepage
+                            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="productpage.html">Product</a></li>
+                              <li><a href="productlistview.html">Shop</a></li>
+                              <li><a href="homepage.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown custom-dropdown">
+                            <button class="buttondrop dropdown-toggle" type="button" data-toggle="dropdown">Shop
+                            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Appliances</a></li>
+                              <li><a href="#">Books</a></li>
+                              <li><a href="#">Clothing</a></li>
+                              <li><a href="#">Electronics</a></li>
+                              <li><a href="#">Furnitures</a></li>
+                              <li><a href="#">Gift Cards</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown custom-dropdown">
+                            <button class="buttondrop dropdown-toggle" type="button" data-toggle="dropdown">Blog
+                            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Appliances</a></li>
+                              <li><a href="#">Books</a></li>
+                              <li><a href="#">Clothing</a></li>
+                              <li><a href="#">Electronics</a></li>
+                              <li><a href="#">Furnitures</a></li>
+                              <li><a href="#">Gift Cards</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown custom-dropdown">
+                            <button class="buttondrop dropdown-toggle" type="button" data-toggle="dropdown">Pages
+                            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Appliances</a></li>
+                              <li><a href="#">Books</a></li>
+                              <li><a href="#">Clothing</a></li>
+                              <li><a href="#">Electronics</a></li>
+                              <li><a href="#">Furnitures</a></li>
+                              <li><a href="#">Gift Cards</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown custom-dropdown">
+                            <button class="buttondrop dropdown-toggle" type="button" data-toggle="dropdown">Buynow
+                            <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Appliances</a></li>
+                              <li><a href="#">Books</a></li>
+                              <li><a href="#">Clothing</a></li>
+                              <li><a href="#">Electronics</a></li>
+                              <li><a href="#">Furnitures</a></li>
+                              <li><a href="#">Gift Cards</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="socialmedia-icon">
+                        <a href="javascript:;" title="1"><i class="fa fa-facebook facebook" aria-hidden="true"></i></a>
+                        <a href="javascript:;" title="1"><i class="fa fa-twitter twitter" aria-hidden="true"></i></a>
+                        <a href="javascript:;" title="1"><i class="fa fa-google-plus googleplus" aria-hidden="true"></i></a>
+                        <a href="javascript:;" title="1"><i class="fa fa-linkedin linkedin" aria-hidden="true"></i></a>
+                        <a href="javascript:;" title="1"><i class="fa fa-instagram instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="productpagecontainer">
+            <div class="privacycontainer">
+                Homepage<i class="fa fa-angle-right" aria-hidden="true"></i><span>Shop</span>
+            </div>
+            <div class="privacypolicy">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="productcategories">
+                            <div class="headsection">
+                                <h3><span></span>Product categories</h3>
+                            </div>
+                            <div class="productcategoriessub">
+                                <div class="subdiv">
+                                    <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Audio & Headphones <span>[12]</span></a>
+                                    <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Digital Watch <span>[10]</span></a>
+                                    <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Desktop & Laptop</a>
+                                    <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Digital & Electronic <span>[8]</span></a>
+                                    <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Monitor & TV <span>[8]</span></a>
+                                    <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Console & Games <span>[9]</span></a>
+                                    <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Camera & Accessories <span>[12]</span></a>
+                                </div>
+                                
+                            </div>
+                            <div class="headsection">
+                                <h3><span></span>Color</h3>
+                            </div>
+                            <div class="productcategoriessub">
+                                <div class="subdiv">
+                                    <a href="javascript:;">Black <span>[1]</span></a>
+                                    <a href="javascript:;">Blue <span>[1]</span></a>
+                                    <a href="javascript:;">Green <span>[1]</span></a>
+                                    <a href="javascript:;">Red <span>[1]</span></a>
+                                    <a href="javascript:;">Yellow <span>[1]</span></a>
+                                </div>
+                            </div>
+                            <div class="headsection">
+                                <h3><span></span>Size</h3>
+                            </div>
+                            <div class="productcategoriessub">
+                                <div class="subdiv">
+                                    <div class="slidecontainer">
+                                        <input type="range" min="49000" max="790000" value="50" class="slider" id="myRange">
+                                        <button>FILTER</button>
+                                        <p>Price:$<span id="demo"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headsection">
+                                <h3><span></span>Average Rating</h3>
+                            </div>
+                            <div class="productcategoriessub">
+                                <div class="subdiv">
+                                    <div class="starrating">
+                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <span>[1]</span>
+                                    </div>
+                                    <div class="starrating">
+                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span>[7]</span>
+                                    </div>
+                                    <div class="starrating">
+                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span>[2]</span>
+                                    </div>
+                                    <div class="starrating">
+                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span>[2]</span>
+                                    </div>
+                                    <div class="starrating">
+                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span>[5]</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="shop">
+                            <div class="headsection">
+                                <h3><span></span>Shop</h3>
+                            </div>
+                            <div class="productlist">
+                                <i class="fa fa-list listview active" aria-hidden="true" title="1"></i> 
+                                <i class="fa fa-th gridview" aria-hidden="true" title="2"></i>
+                                <span>Showing 1-20 of 24 results</span>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle custom-show" type="button" data-toggle="dropdown">Show 20
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">HTML</a></li>
+                                      <li><a href="#">CSS</a></li>
+                                      <li><a href="#">JavaScript</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle custom-show" type="button" data-toggle="dropdown">Default sorting
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">HTML</a></li>
+                                      <li><a href="#">CSS</a></li>
+                                      <li><a href="#">JavaScript</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="allover">
+                                <div class="listedviewcontainer pagelayout1 showthegrid">
+                                    <div class="systemgaget">
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_4-225x225(2).jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>White FND Headphone</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$390,00</h4><p>$490,000</p>
+                                                        <span class="red">-20%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_5-225x225(2).jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Samsung S20 Ultra</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$400,00</h4><p>$590,000</p>
+                                                        <span class="red">-30%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_3-225x225(2).jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Play Station Console</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$80,00</h4><p>$160,000</p>
+                                                        <span class="red">-50%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_1-225x225.jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Gaming Headphone</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$390,00</h4><p>$490,000</p>
+                                                        <span class="red">-20%</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_20-225x225.jpg" alt="">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>43inch Television</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$300,00</h4><p>$400,000</p>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_19-225x225.jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Amazon Alexa Soundspeaker</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$80,00</h4><p>$160,000</p>
+                                                        <span class="red">-60%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_9-225x225.jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Oneplus Wireless</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$40,00</h4><p>$90,000</p>
+                                                        <span class="red">-30%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_7-225x225.jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>I Pad</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$800,00</h4><p>$960,000</p>
+                                                        <span class="red">-50%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_16-225x225.jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Air Purefier</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$390,00</h4><p>$490,000</p>
+                                                        <span class="red">-20%</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_22-225x225(2).jpg" alt="">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Realme Neckband</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$100,00</h4><p>$200,000</p>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_19-225x225.jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Amazon Alexa Speaker</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$80,00</h4><p>$120,000</p>
+                                                        <span class="red">-30%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_5-225x225(2).jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Samsung S20 Ultra</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$400,00</h4><p>$590,000</p>
+                                                        <span class="red">-30%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_3-225x225(2).jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Play Station Console</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$80,00</h4><p>$160,000</p>
+                                                        <span class="red">-50%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_1-225x225.jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Gaming Headphone</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$390,00</h4><p>$490,000</p>
+                                                        <span class="red">-20%</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_20-225x225.jpg" alt="">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>43inch Television</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$300,00</h4><p>$400,000</p>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_4-225x225(2).jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>White FND Headphone</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$390,00</h4><p>$490,000</p>
+                                                        <span class="red">-20%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_5-225x225(2).jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Samsung S20 Ultra</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$400,00</h4><p>$590,000</p>
+                                                        <span class="red">-30%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_3-225x225(2).jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Play Station Console</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$80,00</h4><p>$160,000</p>
+                                                        <span class="red">-50%</span>
+                                                        <span class="yellow">Hot</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_1-225x225.jpg" alt="">
+                                            
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>Gaming Headphone</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$390,00</h4><p>$490,000</p>
+                                                        <span class="red">-20%</span>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gaget">
+                                            <div class="row">
+                                                <div class="col-sm-4 imagecenter">
+                                                    <img src="images/product_image_20-225x225.jpg" alt="">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <div class="listviewcontext">
+                                                        <h5>43inch Television</h5>
+                                                        <div>
+                                                            <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                        <h4>$300,00</h4><p>$400,000</p>
+                                                        <div class="bottombuttons">
+                                                            <button>Add to Cart</button>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gridviewcontainer pagelayout2">
+                                    <div class="systemgaget">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_4-150x150.jpg" alt="">
+                                                    <h5>White FND Headphone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$390,00</h4><p>$490,000</p>
+                                                    <span class="red">-20%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_5-150x150.jpg" alt="">
+                                                    <h5>Samsung Mobile Phone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$129,00</h4><p>$169,000</p>
+                                                    <span class="red">-24%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_3-150x150.jpg" alt="">
+                                                    <h5>Joys Stick</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$100,00</h4><p>$180,000</p>
+                                                    <span class="red">-40%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_1-150x150.jpg" alt="">
+                                                    <h5>Gaming Headphone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$139,00</h4><p>$159,000</p>
+                                                    <span class="red">-18%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_20-150x150.jpg" alt="">
+                                                    <h5>Television 43inch</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$650,00</h4><p>$850,000</p>
+                                                    <span class="red">-23%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_16-150x150.jpg" alt="">
+                                                    <h5>Wire less speaker</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$290,00</h4><p>$390,000</p>
+                                                    <span class="red">-25%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_4-150x150.jpg" alt="">
+                                                    <h5>White FND Headphone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$390,00</h4><p>$490,000</p>
+                                                    <span class="red">-20%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_5-150x150.jpg" alt="">
+                                                    <h5>Samsung Mobile Phone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$129,00</h4><p>$169,000</p>
+                                                    <span class="red">-24%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_3-150x150.jpg" alt="">
+                                                    <h5>Joys Stick</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$100,00</h4><p>$180,000</p>
+                                                    <span class="red">-40%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_1-150x150.jpg" alt="">
+                                                    <h5>Gaming Headphone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$139,00</h4><p>$159,000</p>
+                                                    <span class="red">-18%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_20-150x150.jpg" alt="">
+                                                    <h5>Television 43inch</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$650,00</h4><p>$850,000</p>
+                                                    <span class="red">-23%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_16-150x150.jpg" alt="">
+                                                    <h5>Wire less speaker</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$290,00</h4><p>$390,000</p>
+                                                    <span class="red">-25%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_4-150x150.jpg" alt="">
+                                                    <h5>White FND Headphone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$390,00</h4><p>$490,000</p>
+                                                    <span class="red">-20%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_5-150x150.jpg" alt="">
+                                                    <h5>Samsung Mobile Phone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$129,00</h4><p>$169,000</p>
+                                                    <span class="red">-24%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_3-150x150.jpg" alt="">
+                                                    <h5>Joys Stick</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$100,00</h4><p>$180,000</p>
+                                                    <span class="red">-40%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_1-150x150.jpg" alt="">
+                                                    <h5>Gaming Headphone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$139,00</h4><p>$159,000</p>
+                                                    <span class="red">-18%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_20-150x150.jpg" alt="">
+                                                    <h5>Television 43inch</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$650,00</h4><p>$850,000</p>
+                                                    <span class="red">-23%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_16-150x150.jpg" alt="">
+                                                    <h5>Wire less speaker</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$290,00</h4><p>$390,000</p>
+                                                    <span class="red">-25%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_4-150x150.jpg" alt="">
+                                                    <h5>White FND Headphone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$390,00</h4><p>$490,000</p>
+                                                    <span class="red">-20%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_5-150x150.jpg" alt="">
+                                                    <h5>Samsung Mobile Phone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$129,00</h4><p>$169,000</p>
+                                                    <span class="red">-24%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_3-150x150.jpg" alt="">
+                                                    <h5>Joys Stick</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$100,00</h4><p>$180,000</p>
+                                                    <span class="red">-40%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_1-150x150.jpg" alt="">
+                                                    <h5>Gaming Headphone</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$139,00</h4><p>$159,000</p>
+                                                    <span class="red">-18%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_20-150x150.jpg" alt="">
+                                                    <h5>Television 43inch</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$650,00</h4><p>$850,000</p>
+                                                    <span class="red">-23%</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="gaget">
+                                                    <img src="images/product_image_16-150x150.jpg" alt="">
+                                                    <h5>Wire less speaker</h5>
+                                                    <div>
+                                                        <i class="fa fa-star rating"  aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star rating" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h4>$290,00</h4><p>$390,000</p>
+                                                    <span class="red">-25%</span>
+                                                    <span class="yellow">Hot</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footercontainer">
+            <div class="row">
+                <div class="fcon1">
+                    <div class="col-sm-2">
+                        <img src="images/logo_footer.png" alt="">
+                        <p>Condimentum adipiscing vel neque dis nam parturient orci at scelerisqu neque dis nam parturient.</p>
+                        <a href="javascript:;">451 Wall Street. I-JK. London</a>
+                        <a href="tel:(064) 332-133">Phone: (064) 332-133</a>
+                        <a href="tel:(099) 453-1357">Fax: (099) 453-1357</a>
+                    </div>
+                </div>
+                <div class="fcon2">
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="fconblog">
+                                    <div class="headsection">
+                                        <h3><span></span> Blog</h3>
+                                    </div>
+                                    <div class="smallimg">
+                                        <div class="imgcontainer">
+                                            <img src="images/blog_image_1-768x512.jpg" alt="">
+                                        </div>
+                                        <div class="imgcontent">
+                                            <p>Great White Shark Nursery</p>
+                                            <p>Found in Waters Off Montauk</p>
+                                            <span>February 15, 2023</span>
+                                        </div>
+                                        <div class="fclear"></div>
+                                    </div>
+                                    <div class="smallimg1">
+                                        <div class="imgcontainer">
+                                            <img src="images/blog_image_2-768x510.jpg" alt="">
+                                        </div>
+                                        <div class="imgcontent">
+                                            <p>Great White Shark Nursery</p>
+                                            <p>Found in Waters Off Montauk</p>
+                                            <span>February 15, 2023</span>
+                                        </div>
+                                        <div class="fclear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="fconcatagries">
+                                    <div class="headsection">
+                                        <h3><span></span>Categories</h3>
+                                    </div>
+                                    <div class="subdiv">
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Audio & Headphones</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Digital Watch</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Desktop & Laptop</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Digital & Electronic</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Monitor & TV</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Console & Games</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Camera & Accessories</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="headsection">
+                                    <h3><span></span>My Account</h3>
+                                </div>
+                                <div class="fconaccount">
+                                    <div class="subdiv">
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Cart</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>My account</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Shop</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Wishlist</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Checkout</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>FAQs</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="headsection">
+                                    <h3><span></span>Information</h3>  
+                                </div>
+                                <div class="fconinformation">
+                                    <div class="subdiv">
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Delivery Information</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms & Conditions</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Return Policy</a>
+                                        <a href="javascript:;"><i class="fa fa-angle-right" aria-hidden="true"></i>Customer Service</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footercontainer2">
+            <div class="copyrights">
+               <a href="javascript:;"> @ CopyRight 2023 | template designed by Hex Wp - All lefts reserved I Designed for WordPress</a>
+            </div>
+            <div class="socialmedia-icon">
+                <a href="javascript:;" title="1"><i class="fa fa-facebook facebook" aria-hidden="true"></i></a>
+                <a href="javascript:;" title="1"><i class="fa fa-twitter twitter" aria-hidden="true"></i></a>
+                <a href="javascript:;" title="1"><i class="fa fa-google-plus googleplus" aria-hidden="true"></i></a>
+                <a href="javascript:;" title="1"><i class="fa fa-linkedin linkedin" aria-hidden="true"></i></a>
+                <a href="javascript:;" title="1"><i class="fa fa-instagram instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="fclear"></div>
+        </div>
+    </div>
+</body>
+</html>

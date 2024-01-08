@@ -1,0 +1,23 @@
+$(document).ready(function()
+{
+    //button scroll to top
+    $(window).scroll(function()
+    {
+        if($(window).scrollTop()>1000)
+        {
+            $('.scroll-top').fadeIn(400);
+        }
+        else
+        {
+            $('.scroll-top').fadeOut(400);
+            $('.scroll-top').removeClass('active');
+        }
+    });
+    $('.scroll-top').click(function()
+    {
+        $('html,body').animate(
+            {scrollTop:0},800
+        );
+        $(this).addClass('active');
+    });
+});
